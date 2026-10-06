@@ -54,7 +54,7 @@ The same workflow also runs every morning, so a post given a future `publishedAt
 
 1. Create both repos on GitHub (`mobilepitstop-blog` public, `mobilepitstop-blog-library` private) and push these folders.
 2. In `mobilepitstop-blog`, go to Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-3. Settings → Pages → Custom domain: `blog.mobilepitstop.uk`. Then in Squarespace DNS add **CNAME** `blog` → `<github-username>.github.io`. Once the check passes, tick **Enforce HTTPS**.
+3. Settings → Pages → Custom domain: `blog.mobilepitstop.uk`. Then in Squarespace DNS add **CNAME** `blog` → `gabrielsiemionek-dotcom.github.io`. Once the check passes, tick **Enforce HTTPS**.
 4. Give Claude access to both repos, so the scheduled writing sessions can read the library and push posts.
 5. Add a **Blog** link to the Squarespace menu, and submit `https://blog.mobilepitstop.uk/sitemap.xml` in Google Search Console.
 
