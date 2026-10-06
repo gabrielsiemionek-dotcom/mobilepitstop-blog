@@ -1,0 +1,16 @@
+{
+  "name": "mobilepitstop-blog",
+  "private": true,
+  "type": "module",
+  "description": "The MobilePitStop blog at blog.mobilepitstop.uk: posts written by Claude, approved by Gab, built as a static site.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:drafts": "INCLUDE_DRAFTS=1 node scripts/build.mjs",
+    "graphic": "node scripts/graphic.mjs",
+    "photo": "node scripts/photo.mjs",
+    "check": "node scripts/check-post.mjs"
+  }
+}

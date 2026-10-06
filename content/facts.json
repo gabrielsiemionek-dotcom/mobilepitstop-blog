@@ -1,0 +1,133 @@
+{
+  "_readme": "The only source of business facts for blog posts. If something isn't here, don't state it. Prices stay out of posts until Gab adds confirmed ones to 'prices'. Items under 'check_with_gab' must not be stated as fact.",
+  "updated": "2026-10-06",
+
+  "business": {
+    "name": "MobilePitStop - Valeting & Detailing",
+    "short_name": "MobilePitStop",
+    "owner": "Gabriel (Gab) Siemionek",
+    "type": "Mobile car valeting and detailing, plus garage-based work at a unit in Birkenhead",
+    "positioning": "A detailer, not a car wash. Explain the method and why it matters. Never present the service as a quick wash.",
+    "mobile": "Comes to the customer's home or workplace, roughly within 20 miles of Ellesmere Port",
+    "areas": ["Cheshire", "Merseyside", "Flintshire"],
+    "towns": ["Ellesmere Port", "Chester", "Runcorn", "Northwich", "Crewe", "Nantwich", "Knutsford", "Wilmslow", "Macclesfield", "Congleton", "Liverpool", "Birkenhead", "Wallasey", "Bootle", "Southport", "Formby", "St Helens", "Prescot", "Huyton", "Kirkby", "Mold", "Flint", "Connah's Quay", "Holywell", "Buckley", "Shotton", "Hawarden", "Queensferry", "Bagillt", "Caergwrle"],
+    "phone_display": "07592 196929",
+    "phone_tel": "+447592196929",
+    "email": "mobilepitstopvalet@gmail.com",
+    "reviews": "5.0 stars on Google (say 'five-star rated on Google'; don't quote a review count, it changes)",
+    "insured": true,
+    "booking": "Online: pick a service, answer a few questions about the car, then book. Garage services are by quote.",
+    "honesty_line": "Send a few photos in daylight and we'll tell you straight which service the car needs, including when a cheaper one will do."
+  },
+
+  "services": [
+    {
+      "name": "Maintenance Wash",
+      "url": "https://mobilepitstop.uk/maintenance-wash",
+      "for": "Keeping an already-clean car clean between deep cleans. Not a first clean for a neglected car.",
+      "method": ["snow foam pre-wash so dirt is lifted before anything touches the paint", "two-bucket safe hand wash with grit guards", "wheels, tyres and arches cleaned", "hand dried with plush microfibre", "interior blow out, vacuum and key areas wiped", "glass cleaned inside and out"]
+    },
+    {
+      "name": "Interior Deep Clean",
+      "url": "https://mobilepitstop.uk/interior-deep-clean",
+      "for": "Interiors that need more than a vacuum: grit, stains, sticky surfaces, kids, pets.",
+      "method": ["compressed air through seat rails, joins and vents", "deep vacuum of seats, carpets, mats, boot and edges", "steam cleaning of contact areas", "steering wheel sanitised", "crevices, seams and vents agitated by hand", "plastics scrubbed to a natural satin finish, not greased", "interior glass cleaned"],
+      "add_ons": ["severe pet hair removal", "heavy sand removal", "headliner (roof lining) clean", "leather coating"]
+    },
+    {
+      "name": "Exterior Detail",
+      "url": "https://mobilepitstop.uk/exterior-detail",
+      "for": "Paint that's dirty in a way washing doesn't fix: tar, iron fallout from brake dust, road film.",
+      "method": ["snow foam pre-wash and two-bucket hand wash", "wheels, tyres and arches deep cleaned", "trims, door shuts and badges detailed", "chemical decontamination of tar, iron fallout and road film", "hand dried, water traps cleared", "protection applied to finish"],
+      "add_ons": ["clay bar decontamination (the step machine polishing needs first)"]
+    },
+    {
+      "name": "In & Out Deep Clean",
+      "url": "https://mobilepitstop.uk/in-out-deep-clean",
+      "for": "The full reset inside and out. The right first clean for a car that hasn't been properly done in months.",
+      "method": ["everything in the Exterior Detail", "everything in the Interior Deep Clean", "steam, shampoo and extraction of seats, carpets, mats and boot, included rather than sold as an extra", "seat stain treatment included", "a protection wax on the paint"],
+      "upgrade": "Can be upgraded with a 6-month ceramic sealant, which makes it a Protection Detail"
+    },
+    {
+      "name": "Protection Detail",
+      "url": "https://mobilepitstop.uk/protection-detail",
+      "for": "A deep clean plus proper paint protection. Protects the paint you've got rather than correcting it.",
+      "method": ["everything in the In & Out Deep Clean", "clay bar decontamination so the paint is glass-smooth", "6-month ceramic sealant on the paint", "Glaco hydrophobic coating on the glass"],
+      "add_ons": ["engine bay detail", "paint enhancement (1-stage machine polish) before the protection goes on", "leather ceramic coating", "longer-life ceramic coatings in place of the sealant, by quote"]
+    },
+    {
+      "name": "Machine Polishing (Enhancement Polish, 1 stage)",
+      "url": "https://mobilepitstop.uk/machine-polishing",
+      "for": "Paint that looks dull, hazy or swirled under direct light.",
+      "method": ["wash, chemical decontamination and clay bar first", "trims and badges masked", "single-stage machine polish across all paint panels", "removes most light swirls, water marks and light scratches (never promise all of them)", "finish checked under an inspection light", "protection applied afterwards"]
+    },
+    {
+      "name": "Ceramic Coating",
+      "url": "https://mobilepitstop.uk/ceramic-coating",
+      "for": "Long-term protection. A coating locks in whatever condition the paint is in, so the paint is corrected first.",
+      "method": ["full decontamination and clay bar", "machine polish first", "ceramic coating on the paint", "Glaco on the glass", "aftercare guidance"],
+      "notes": "Coatings are booked by quote because application depends on the weather. Longer-life options exist; don't state durations beyond 'longer-life options'."
+    },
+    {
+      "name": "Odour Removal (cigarette, milk, pet, bio)",
+      "url": "https://mobilepitstop.uk/cigarette/milk/bio-odour-removal",
+      "for": "Smells that come back: smoke, spilt milk, pets, vomit and other biological spills.",
+      "method": ["treatment chosen to match the odour", "source removal by steam, shampoo and extraction", "ozone or chlorine dioxide treatment where suitable", "ventilation treated, not just surfaces", "cabin air filter advice so it doesn't return"],
+      "key_point": "Air fresheners mask odour. This removes what's causing it."
+    },
+    {
+      "name": "Detailing Maintenance Plan",
+      "url": "https://mobilepitstop.uk/car-detailing-maintenance-plan",
+      "for": "Regular visits that keep a deep-cleaned or protected car at that standard, at a lower price per visit."
+    },
+    {
+      "name": "Paint Correction (2-stage and multi-stage)",
+      "url": "https://mobilepitstop.uk/all-services#correction",
+      "garage": true,
+      "for": "Paint you want as close to perfect as possible. Done at the unit, by quote.",
+      "method": ["cutting stage for deeper defects", "refinement stage to remove haze and restore gloss", "a third stage for badly neglected paint", "two days or more depending on condition"]
+    },
+    {
+      "name": "Window Tinting",
+      "url": "https://mobilepitstop.uk/window-tinting",
+      "garage": true,
+      "for": "Heat and UV rejection and privacy. Fitted indoors by a specialist, by quote.",
+      "law": "UK law: the windscreen must let through at least 75% of light and the front side windows at least 70%, so those can only be tinted lightly. Windows behind the driver are unrestricted."
+    },
+    {
+      "name": "Paint Protection Film (PPF)",
+      "url": "https://mobilepitstop.uk/all-services#ppf",
+      "garage": true,
+      "for": "Clear self-healing film on the panels that take stone chips. By quote."
+    },
+    {
+      "name": "Vinyl Wrap and De-chrome",
+      "url": "https://mobilepitstop.uk/all-services#wrap",
+      "garage": true,
+      "for": "Colour changes, partial wraps and chrome trim wrapped black. Reversible. By quote."
+    }
+  ],
+
+  "other_pages": {
+    "all_services": "https://mobilepitstop.uk/all-services",
+    "reviews": "https://mobilepitstop.uk/reviews",
+    "faqs": "https://mobilepitstop.uk/faqs",
+    "contact": "https://mobilepitstop.uk/contact-we-respond-24/7",
+    "our_approach": "https://mobilepitstop.uk/learn-our-way-of-doing-things",
+    "hand_car_washes_article": "https://mobilepitstop.uk/why-hand-car-washes-scratch-your-paint",
+    "seat_shampooing": "https://mobilepitstop.uk/seat-shampooing-in-cheshire",
+    "pet_hair_stain_odour": "https://mobilepitstop.uk/pet-hair-stain-and-odour-removal-in-cheshire",
+    "steam_cleaning": "https://mobilepitstop.uk/steam-cleaning-in-cheshire",
+    "upholstery": "https://mobilepitstop.uk/upholstery-cleaning-service-cheshire",
+    "town_page_pattern": "https://mobilepitstop.uk/mobile-valeting-service-<town-slug> (e.g. mobile-valeting-service-chester, mobile-valeting-service-connahs-quay, mobile-valeting-service-st-helens)"
+  },
+
+  "prices": {},
+
+  "check_with_gab": [
+    "Current prices for every service (posts carry no prices until these are confirmed here)",
+    "How long the In & Out Deep Clean's protection wax lasts",
+    "Whether full extraction is now included in the Interior Deep Clean",
+    "Exact ceramic coating durations offered"
+  ]
+}

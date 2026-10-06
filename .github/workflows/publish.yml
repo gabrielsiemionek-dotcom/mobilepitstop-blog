@@ -1,0 +1,48 @@
+name: Publish blog
+
+# Every change merged into main (an approved post, a design tweak) rebuilds and publishes the site.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '7 6 * * *'   # daily rebuild, so posts given a future publish date go live on their day
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: blog-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Check every post
+        run: node scripts/check-post.mjs --all
+
+      - name: Build the blog
+        run: node scripts/build.mjs
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

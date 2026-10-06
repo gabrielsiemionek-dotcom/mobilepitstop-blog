@@ -1,0 +1,52 @@
+{
+  "title": "How to Get Dog Hair Out of Car Seats and Carpets",
+  "status": "draft",
+  "publishedAt": "2026-10-08T07:00:00Z",
+  "language": "en",
+  "meta_description": "Why dog hair clings to car carpet, the DIY method that works (rubber glove, pet hair brush, vacuum), and when it needs a proper interior clean.",
+  "excerpt": "Dog hair weaves itself into car carpet, which is why a hoover alone leaves so much behind. Here's the at-home method that works, and when it's time for a proper clean.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Before and after: a boot carpet covered in dog hair, and the same carpet clean"
+  },
+  "keywords": [
+    "how to get dog hair out of car",
+    "dog hair car seats",
+    "pet hair removal car",
+    "interior deep clean"
+  ],
+  "faq": [
+    {
+      "q": "Can a normal vacuum get dog hair out of car carpet?",
+      "a": "It gets the loose hair, but not the hair that's woven into the fibres. Loosen it first with a damp rubber glove or a pet hair brush, then vacuum again."
+    },
+    {
+      "q": "Will a pet hair stone damage my car carpet?",
+      "a": "Some are abrasive enough to rough up the fibres. Test on a hidden patch, use light pressure, keep it to the boot lining and floor carpet, and don't use it on seats."
+    },
+    {
+      "q": "How do I get rid of the dog smell in my car?",
+      "a": "Most of the smell comes from oils and dirt in the fabric, not from the hair. It needs the fabric cleaning, with shampoo and extraction, rather than an air freshener."
+    },
+    {
+      "q": "Is heavy dog hair extra?",
+      "a": "Heavy pet hair is an add-on to the Interior Deep Clean, because it takes a lot longer to do properly. Send us a few photos and we'll tell you whether your car needs it."
+    }
+  ],
+  "cta": {
+    "heading": "Dog hair beaten you?",
+    "text": "We'll get it out of the seats, carpets and boot at your home. Pick the Interior Deep Clean, answer a few quick questions and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/interior-deep-clean"
+  },
+  "plan_id": "dog-hair",
+  "photos_used": [
+    "P062",
+    "P023",
+    "P022",
+    "P047"
+  ],
+  "social": {
+    "src": "social.webp"
+  }
+}
