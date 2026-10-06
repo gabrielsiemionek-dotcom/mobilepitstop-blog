@@ -31,6 +31,8 @@ The photo library is private because some photos show customers' number plates o
   - `preview.mjs`: makes a one-file preview to send Gab
   - `graphic.mjs`: branded graphics
   - `photo.mjs`: crops photos and blurs number plates
+  - `indexnow.mjs`: tells Bing and other engines about new posts after each publish
+- `snippets/squarespace-latest-posts.html`: "Latest from the blog" block for the Squarespace site
 
 ## Publishing
 
@@ -41,6 +43,12 @@ Every push to `main` runs **Publish blog** (`.github/workflows/publish.yml`), wh
 3. publishes it to GitHub Pages
 
 The same workflow also runs every morning, so a post given a future `publishedAt` goes live on its day.
+
+## Getting posts indexed
+
+- **Google** finds new posts through `sitemap.xml`, which is rebuilt with dates on every publish. Submit it once in Google Search Console and Google keeps checking it. Google has no supported "submit this URL" API for blog posts: the Indexing API is only for job posts and livestreams, and the sitemap ping was switched off in 2023.
+- **Bing, Yandex, Seznam, Naver and others** are told about each new or updated post straight after it's published, through IndexNow (last step of the workflow, `scripts/indexnow.mjs`). The key file `/<indexNowKey>.txt` is published with the site. This step never fails a publish.
+- **Links from the main site:** `snippets/squarespace-latest-posts.html` is a Squarespace code block that shows the newest posts on mobilepitstop.uk, read live from `articles.json`, so every new post is linked from the main site without anyone updating it.
 
 ## One-time setup
 

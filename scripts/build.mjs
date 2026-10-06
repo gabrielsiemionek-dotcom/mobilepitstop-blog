@@ -46,6 +46,7 @@ await buildSitemap();
 await buildFeed(byLang.get(''));
 await buildJsonFeed();
 await out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+if (config.indexNowKey) await out(`${config.indexNowKey}.txt`, config.indexNowKey);
 await out('404.html', layout({
   lang: DEFAULT_LANG,
   title: `Page not found | ${config.blogName}`,
@@ -530,6 +531,7 @@ async function buildJsonFeed() {
     url: a.url,
     language: a.lang,
     published: a.dateIso,
+    updated: a.modifiedIso || a.dateIso,
     image: abs(a.hero_image_url) || null,
     excerpt: a.excerptText,
   }));

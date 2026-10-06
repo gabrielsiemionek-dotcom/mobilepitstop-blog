@@ -6,6 +6,10 @@ export default {
   siteUrl: process.env.SITE_URL || 'https://blog.mobilepitstop.uk',
 
   blogName: 'MobilePitStop Blog',
+
+  // IndexNow key. Not a secret: it's published at /<key>.txt so Bing and others can check
+  // that notifications about new posts really come from this site.
+  indexNowKey: '4745f7454a9879dff665b4fcc07e931c',
   indexHeading: 'Car care advice from people who do it every day',
   blogDescription:
     'Practical tips on cleaning, protecting and looking after your car, from the MobilePitStop team in Cheshire, Merseyside and Flintshire.',

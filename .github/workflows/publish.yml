@@ -34,6 +34,10 @@ jobs:
       - name: Check every post
         run: node scripts/check-post.mjs --all
 
+      # Remember what's live now, so only new or changed posts get announced after publishing.
+      - name: Save the live article list
+        run: curl -fsSL https://blog.mobilepitstop.uk/articles.json -o "$RUNNER_TEMP/live-articles.json" || echo '[]' > "$RUNNER_TEMP/live-articles.json"
+
       - name: Build the blog
         run: node scripts/build.mjs
 
@@ -46,3 +50,9 @@ jobs:
       - name: Publish to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+      # Tell Bing and other IndexNow search engines about new posts straight away.
+      # Google finds them through the sitemap. This step can never fail the publish.
+      - name: Announce new posts (IndexNow)
+        continue-on-error: true
+        run: node scripts/indexnow.mjs --previous "$RUNNER_TEMP/live-articles.json"

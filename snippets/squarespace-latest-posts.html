@@ -1,0 +1,180 @@
+<!-- ==========================================================================
+     MobilePitStop — "Latest from the blog" block for mobilepitstop.uk
+     Paste into ONE Squarespace Code Block (homepage, near the bottom, and
+     on any service page you like).
+
+     It reads https://blog.mobilepitstop.uk/articles.json each time the
+     page loads, so new posts appear here on their own. Nothing to update.
+
+     Namespaced .mpb- so it can't clash with the All Services page (.mps-),
+     the homepage approach section (.mph-) or Squarespace's own styles.
+     No fonts or libraries loaded from outside.
+
+     IF THE BLOG CAN'T BE REACHED (or JavaScript is off) the block still
+     shows a plain "Read the blog" card, so there's never an empty gap.
+
+     TO SHOW MORE OR FEWER POSTS change data-count="3" below (1 to 6).
+     Phones show the first two.
+     ========================================================================== -->
+
+<style>
+.mpb{
+  --mpb-ink:#ffffff;
+  --mpb-dim:rgba(255,255,255,.66);
+  --mpb-faint:rgba(255,255,255,.4);
+  --mpb-line:rgba(255,255,255,.13);
+  --mpb-yellow:#E3FC02;
+  color:var(--mpb-ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  max-width:980px;
+  margin:0 auto;
+  padding:0 2px;
+  text-align:left;
+}
+.mpb *{box-sizing:border-box;}
+.mpb-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:0 0 18px;
+}
+.mpb h2.mpb-h2{
+  font-size:clamp(24px,5.6vw,34px);
+  font-weight:900;
+  letter-spacing:-.025em;
+  line-height:1.1;
+  margin:0;
+  color:var(--mpb-ink);
+}
+.mpb a.mpb-all{
+  color:var(--mpb-yellow);
+  font-weight:800;
+  font-size:15px;
+  text-decoration:none;
+  border-bottom:1px solid rgba(227,252,2,.4);
+}
+.mpb-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:16px;
+}
+.mpb a.mpb-card{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--mpb-line);
+  border-radius:16px;
+  overflow:hidden;
+  background:rgba(255,255,255,.028);
+  color:var(--mpb-ink);
+  text-decoration:none !important;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.mpb a.mpb-card:hover,.mpb a.mpb-card:focus-visible{
+  border-color:rgba(227,252,2,.55);
+  transform:translateY(-2px);
+}
+.mpb-img{
+  margin:0;
+  aspect-ratio:16/9;
+  background:#111;
+  overflow:hidden;
+}
+.mpb-img img{display:block;width:100%;height:100%;object-fit:cover;}
+.mpb-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:7px;flex:1;}
+.mpb-date{font-size:12.5px;font-weight:700;color:var(--mpb-faint);margin:0;}
+.mpb-title{font-size:18px;font-weight:850;letter-spacing:-.015em;line-height:1.25;margin:0;color:var(--mpb-ink);}
+.mpb-excerpt{
+  font-size:14px;line-height:1.55;color:var(--mpb-dim);margin:0;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.mpb-more{margin-top:auto;padding-top:4px;font-size:14px;font-weight:800;color:var(--mpb-yellow);}
+.mpb-fallback .mpb-body{padding:22px 20px;}
+/* On phones, two posts are enough: keeps the homepage from getting too long. */
+@media (max-width:640px){.mpb-grid a.mpb-card:nth-child(n+3){display:none;}}
+@media (prefers-reduced-motion:reduce){.mpb a.mpb-card{transition:none;}.mpb a.mpb-card:hover{transform:none;}}
+</style>
+
+<section class="mpb" aria-labelledby="mpb-h2" data-src="https://blog.mobilepitstop.uk/articles.json" data-count="3">
+  <div class="mpb-head">
+    <h2 class="mpb-h2" id="mpb-h2">Latest from the blog</h2>
+    <a class="mpb-all" href="https://blog.mobilepitstop.uk/">All articles &rarr;</a>
+  </div>
+  <div class="mpb-grid">
+    <a class="mpb-card mpb-fallback" href="https://blog.mobilepitstop.uk/">
+      <div class="mpb-body">
+        <p class="mpb-title">Car care advice from people who do it every day</p>
+        <p class="mpb-excerpt">Practical tips on cleaning, protecting and looking after your car.</p>
+        <span class="mpb-more">Read the blog &rarr;</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<script>
+(function(){
+  var box = document.querySelector('.mpb[data-src]');
+  if(!box || !window.fetch) return;
+  var grid = box.querySelector('.mpb-grid');
+  var count = Math.min(6, Math.max(1, parseInt(box.getAttribute('data-count'), 10) || 3));
+
+  function el(tag, cls, text){
+    var n = document.createElement(tag);
+    if(cls) n.className = cls;
+    if(text) n.textContent = text;
+    return n;
+  }
+  function niceDate(iso){
+    var d = new Date(iso);
+    if(isNaN(d)) return '';
+    try { return d.toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' }); }
+    catch(e){ return ''; }
+  }
+  function safeUrl(u){
+    return /^https:\/\/blog\.mobilepitstop\.uk\//.test(u || '') ? u : null;
+  }
+
+  fetch(box.getAttribute('data-src'), { cache: 'no-cache' })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function(list){
+      if(!Array.isArray(list)) return;
+      var posts = list
+        .filter(function(p){ return safeUrl(p.url) && (!p.language || p.language.indexOf('en') === 0); })
+        .sort(function(a, b){ return String(b.published).localeCompare(String(a.published)); })
+        .slice(0, count);
+      if(!posts.length) return;
+
+      var frag = document.createDocumentFragment();
+      posts.forEach(function(p){
+        var a = el('a', 'mpb-card');
+        a.href = p.url;
+        if(safeUrl(p.image)){
+          var fig = el('figure', 'mpb-img');
+          var img = el('img');
+          img.src = p.image; img.alt = ''; img.loading = 'lazy'; img.decoding = 'async';
+          img.width = 800; img.height = 450;
+          fig.appendChild(img); a.appendChild(fig);
+        }
+        var body = el('div', 'mpb-body');
+        var date = niceDate(p.published);
+        if(date) body.appendChild(el('p', 'mpb-date', date));
+        body.appendChild(el('h3', 'mpb-title', p.title || 'Read the article'));
+        if(p.excerpt) body.appendChild(el('p', 'mpb-excerpt', p.excerpt));
+        body.appendChild(el('span', 'mpb-more', 'Read article →'));
+        a.appendChild(body);
+        frag.appendChild(a);
+      });
+      grid.innerHTML = '';
+      grid.appendChild(frag);
+
+      /* Squarespace measures a code block's height once; nudge it to re-measure. */
+      try {
+        window.dispatchEvent(new Event('resize'));
+        setTimeout(function(){ window.dispatchEvent(new Event('resize')); }, 150);
+      } catch(e){}
+    })
+    .catch(function(){ /* keep the fallback card */ });
+})();
+</script>
