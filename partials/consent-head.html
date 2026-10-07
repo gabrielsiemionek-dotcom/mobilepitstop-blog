@@ -1,0 +1,26 @@
+<!-- Consent defaults (Google Consent Mode v2), then Google Tag Manager. Same rules as mobilepitstop.uk:
+     advertising OFF until accepted; statistics ON unless switched off. The visitor's choice is shared
+     with mobilepitstop.uk through the mps_consent cookie on .mobilepitstop.uk (localStorage as a fallback). -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function(){
+    var c = null;
+    try{
+      var m = document.cookie.match(/(?:^|;\s*)mps_consent=([^;]+)/);
+      c = JSON.parse((m && decodeURIComponent(m[1])) || localStorage.getItem('mps_consent') || 'null');
+      if(c && (!c.t || Date.now() - c.t > 365 * 864e5)) c = null;
+    }catch(e){ c = null; }
+    var ads = (c && c.ads) ? 'granted' : 'denied';
+    var stats = (c && c.stats === false) ? 'denied' : 'granted';
+    var state = { ad_storage: ads, ad_user_data: ads, ad_personalization: ads, analytics_storage: stats };
+    gtag('consent', 'default', { ad_storage: ads, ad_user_data: ads, ad_personalization: ads, analytics_storage: stats,
+      functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500 });
+    /* Google tags send nothing on the default alone, so confirm it straight away (as on the main site) */
+    gtag('consent', 'update', state);
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', true);
+    window.MPS_CONSENT_STATE = { ads: ads === 'granted', stats: stats === 'granted', decided: !!c };
+  })();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{GTM_ID}}');</script>

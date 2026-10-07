@@ -10,6 +10,10 @@ export default {
   // IndexNow key. Not a secret: it's published at /<key>.txt so Bing and others can check
   // that notifications about new posts really come from this site.
   indexNowKey: '4745f7454a9879dff665b4fcc07e931c',
+
+  // Google Tag Manager container shared with mobilepitstop.uk (GA4 G-4JP2C2WJJF runs inside it).
+  // Loaded only on the live site, behind the same cookie banner as the main site. Set to '' to switch off.
+  gtmId: 'GTM-MMHW32R2',
   indexHeading: 'Car care advice from people who do it every day',
   blogDescription:
     'Practical tips on cleaning, protecting and looking after your car, from the MobilePitStop team in Cheshire, Merseyside and Flintshire.',

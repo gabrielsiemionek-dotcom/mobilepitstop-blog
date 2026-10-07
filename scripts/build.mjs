@@ -17,6 +17,15 @@ const REDIRECTS_FILE = path.join(ROOT, 'content', 'redirects.json');
 const OUT = path.join(ROOT, 'dist');
 
 const SITE = config.siteUrl.replace(/\/+$/, '');
+
+// Google Tag Manager + cookie banner only on the real live site: never in drafts, previews or local builds,
+// so test pages don't end up in Google Analytics.
+const TRACKING =
+  Boolean(config.gtmId) && !INCLUDE_DRAFTS && process.env.NO_TRACKING !== '1' && SITE === 'https://blog.mobilepitstop.uk';
+const TRACKING_HEAD = TRACKING
+  ? (await readFile(path.join(ROOT, 'partials', 'consent-head.html'), 'utf8')).replace('{{GTM_ID}}', config.gtmId)
+  : '';
+const TRACKING_BODY = TRACKING ? await readFile(path.join(ROOT, 'partials', 'consent-banner.html'), 'utf8') : '';
 const DEFAULT_LANG = config.defaultLanguage.toLowerCase();
 const YEAR = new Date().getFullYear();
 
@@ -334,6 +343,7 @@ function layout({ lang, title, description, canonical, image, ogType = 'website'
 <html lang="${esc(lang)}">
 <head>
 <meta charset="utf-8">
+${TRACKING_HEAD}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
@@ -379,11 +389,13 @@ ${body}
     <ul class="footer-links">
       ${config.footerLinks.map((l) => `<li><a href="${esc(l.url)}">${esc(l.label)}</a></li>`).join('\n      ')}
       <li><a href="/feed.xml">RSS feed</a></li>
+      ${TRACKING ? '<li><a href="#cookie-settings">Cookie settings</a></li>' : ''}
       ${langLinks.map((d) => `<li><a href="/${d}/" hreflang="${esc(d)}">${esc(languageName(d))}</a></li>`).join('\n      ')}
     </ul>
     <p class="copyright">© ${YEAR} ${esc(b.name)}</p>
   </div>
 </footer>
+${TRACKING_BODY}
 </body>
 </html>
 `;

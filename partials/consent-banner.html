@@ -1,0 +1,207 @@
+<!-- Cookie banner, same as mobilepitstop.uk. The choice is saved in the mps_consent cookie on .mobilepitstop.uk
+     (shared with the main site) and in localStorage. Any "Cookie settings" link (#cookie-settings) reopens it. -->
+<style>
+  .mpsc{
+    position:fixed; left:16px; right:16px; bottom:16px; z-index:99999;
+    max-width:560px; margin:0 auto; padding:16px 16px 14px;
+    border-radius:16px; border:1px solid rgba(255,255,255,.16);
+    background:#111; color:#fff;
+    box-shadow:0 18px 50px rgba(0,0,0,.55);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+    font-size:14px; line-height:1.5;
+    animation:mpsc-in .25s ease;
+  }
+  @keyframes mpsc-in{ from{ opacity:0; transform:translateY(12px); } to{ opacity:1; transform:none; } }
+  @media (prefers-reduced-motion: reduce){ .mpsc{ animation:none; } }
+  .mpsc[hidden]{ display:none; }
+  .mpsc *{ box-sizing:border-box; }
+  .mpsc h2{ margin:0 0 4px; font-size:15.5px; line-height:1.3; font-weight:950; letter-spacing:-.01em; text-transform:none; color:#fff; }
+  .mpsc p{ margin:0 0 12px; color:rgba(255,255,255,.74); }
+  .mpsc a{ color:#E3FC02; font-weight:800; text-decoration:none; }
+  .mpsc a:hover{ text-decoration:underline; }
+
+  .mpsc-btns{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .mpsc-btn{
+    appearance:none; border:none; cursor:pointer;
+    min-height:44px; padding:10px 12px; border-radius:999px;
+    font:inherit; font-size:14px; font-weight:950;
+    transition:transform .15s ease, filter .15s ease;
+  }
+  .mpsc-btn:hover{ transform:translateY(-1px); filter:brightness(1.05); }
+  .mpsc-btn:focus-visible{ outline:3px solid #00B8FF; outline-offset:2px; }
+  .mpsc-yes{ background:#E3FC02; color:#0b0b0b; }
+  .mpsc-no { background:#fff;    color:#0b0b0b; }
+  .mpsc-link{
+    grid-column:1 / -1; appearance:none; border:none; background:none; cursor:pointer;
+    padding:6px; font:inherit; font-size:13px; font-weight:800; color:rgba(255,255,255,.7);
+    text-decoration:underline; text-underline-offset:3px;
+  }
+  .mpsc-link:hover{ color:#fff; }
+
+  .mpsc-opts{ display:flex; flex-direction:column; gap:8px; margin:0 0 12px; }
+  .mpsc-opt{
+    display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+    padding:10px 12px; border-radius:12px;
+    border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.03);
+  }
+  .mpsc-opt b{ display:block; font-size:14px; color:#fff; }
+  .mpsc-opt span{ display:block; font-size:12.5px; color:rgba(255,255,255,.6); }
+  .mpsc-opt .fixed{ font-size:12px; font-weight:900; color:rgba(255,255,255,.5); white-space:nowrap; padding-top:2px; }
+
+  .mpsc-sw{ position:relative; flex:0 0 46px; width:46px; height:26px; margin-top:2px; }
+  .mpsc-sw input{ position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; z-index:1; }
+  .mpsc-sw i{
+    position:absolute; inset:0; border-radius:999px; background:rgba(255,255,255,.2);
+    transition:background .15s ease;
+  }
+  .mpsc-sw i::after{
+    content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
+    background:#fff; transition:transform .15s ease;
+  }
+  .mpsc-sw input:checked + i{ background:#E3FC02; }
+  .mpsc-sw input:checked + i::after{ transform:translateX(20px); background:#0b0b0b; }
+  .mpsc-sw input:focus-visible + i{ outline:3px solid #00B8FF; outline-offset:2px; }
+
+  @media (max-width:480px){
+    .mpsc{ left:10px; right:10px; bottom:10px; padding:14px 14px 12px; font-size:13.5px; }
+    .mpsc-btn{ font-size:13.5px; }
+  }
+</style>
+
+<div class="mpsc" id="mpsc" role="dialog" aria-live="polite" aria-labelledby="mpscTitle" hidden>
+  <div id="mpscMain">
+    <h2 id="mpscTitle">Cookies on MobilePitStop</h2>
+    <p>Cookies run and improve our site. With your OK, ad cookies also show us which ads bring customers, so we don't waste money. <a href="https://mobilepitstop.uk/privacy-policy-cookie-policy#pp-cookies">Cookie policy</a></p>
+    <div class="mpsc-btns">
+      <button class="mpsc-btn mpsc-yes" type="button" data-mpsc="accept">Accept all</button>
+      <button class="mpsc-btn mpsc-no"  type="button" data-mpsc="reject">Reject advertising</button>
+      <button class="mpsc-link" type="button" data-mpsc="manage">Manage settings</button>
+    </div>
+  </div>
+
+  <div id="mpscPrefs" hidden>
+    <h2>Cookie settings</h2>
+    <div class="mpsc-opts">
+      <div class="mpsc-opt">
+        <div><b>Essential</b><span>Security, your cookie choice and discount codes.</span></div>
+        <div class="fixed">Always on</div>
+      </div>
+      <div class="mpsc-opt">
+        <div><b>Statistics</b><span>Google Analytics visit counts, to improve the site.</span></div>
+        <label class="mpsc-sw"><input type="checkbox" id="mpscStats" aria-label="Statistics cookies"><i></i></label>
+      </div>
+      <div class="mpsc-opt">
+        <div><b>Advertising</b><span>Google Ads, Meta and Reddit, to measure which ads lead to bookings.</span></div>
+        <label class="mpsc-sw"><input type="checkbox" id="mpscAds" aria-label="Advertising cookies"><i></i></label>
+      </div>
+    </div>
+    <div class="mpsc-btns">
+      <button class="mpsc-btn mpsc-yes" type="button" data-mpsc="save">Save choices</button>
+      <button class="mpsc-btn mpsc-no"  type="button" data-mpsc="reject">Reject advertising</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'mps_consent';
+  var box   = document.getElementById('mpsc');
+  if(!box) return;
+  var main  = document.getElementById('mpscMain');
+  var prefs = document.getElementById('mpscPrefs');
+  var chkS  = document.getElementById('mpscStats');
+  var chkA  = document.getElementById('mpscAds');
+  var onOurDomain = /(^|\.)mobilepitstop\.uk$/.test(location.hostname);
+
+  var st = window.MPS_CONSENT_STATE || { ads:false, stats:true, decided:false };
+
+  function gtagSafe(){
+    window.dataLayer = window.dataLayer || [];
+    if(typeof window.gtag === 'function'){ window.gtag.apply(null, arguments); }
+    else { window.dataLayer.push(arguments); }
+  }
+
+  /* On opting out, clear what those tools already left behind, on this host and on .mobilepitstop.uk */
+  function clearCookies(prefixes){
+    var host = location.hostname.replace(/^www\./, '');
+    var domains = ['', ';domain=' + host, ';domain=.' + host];
+    if(onOurDomain) domains.push(';domain=.mobilepitstop.uk');
+    document.cookie.split(';').forEach(function(c){
+      var name = c.split('=')[0].trim();
+      if(!prefixes.some(function(p){ return name.indexOf(p) === 0; })) return;
+      domains.forEach(function(d){
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/' + d;
+      });
+    });
+  }
+
+  function save(ads, stats){
+    st = { ads: !!ads, stats: !!stats, decided: true };
+    window.MPS_CONSENT_STATE = st;
+    var saved = JSON.stringify({ ads: st.ads, stats: st.stats, t: Date.now() });
+    try{ localStorage.setItem(KEY, saved); }catch(e){}
+    if(onOurDomain){
+      document.cookie = KEY + '=' + encodeURIComponent(saved) + ';domain=.mobilepitstop.uk;path=/;max-age=31536000;SameSite=Lax;Secure';
+    }
+
+    var a = st.ads ? 'granted' : 'denied';
+    gtagSafe('consent', 'update', {
+      ad_storage: a, ad_user_data: a, ad_personalization: a,
+      analytics_storage: st.stats ? 'granted' : 'denied'
+    });
+
+    if(!st.ads){
+      clearCookies(['_gcl_', '_rdt_', '_fbp', '_fbc']);
+      ['captured_gclid', '_gcl_ls'].forEach(function(k){
+        try{ localStorage.removeItem(k); }catch(e){}
+        try{ sessionStorage.removeItem(k); }catch(e){}
+      });
+    }
+    if(!st.stats) clearCookies(['_ga']);
+
+    window.dataLayer.push({ event: 'mps_consent_update', mps_ads: st.ads, mps_stats: st.stats });
+    hide();
+  }
+
+  function show(view){
+    chkS.checked = st.stats !== false;
+    chkA.checked = !!st.ads;
+    main.hidden  = view === 'prefs';
+    prefs.hidden = view !== 'prefs';
+    box.hidden = false;
+    var first = box.querySelector(view === 'prefs' ? '#mpscStats' : '[data-mpsc="accept"]');
+    if(first && view === 'prefs'){ try{ first.focus({ preventScroll:true }); }catch(e){} }
+  }
+  function hide(){ box.hidden = true; }
+
+  box.addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('[data-mpsc]') : null;
+    if(!b) return;
+    var act = b.getAttribute('data-mpsc');
+    if(act === 'accept')      save(true, true);
+    else if(act === 'reject') save(false, prefs.hidden ? true : chkS.checked);
+    else if(act === 'manage') show('prefs');
+    else if(act === 'save')   save(chkA.checked, chkS.checked);
+  });
+
+  box.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && st.decided) hide();
+  });
+
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('a[href$="#cookie-settings"], [data-cookie-settings]') : null;
+    if(!t) return;
+    e.preventDefault();
+    show('prefs');
+  });
+
+  window.MPS_CONSENT = {
+    ads:   function(){ return !!st.ads; },
+    stats: function(){ return st.stats !== false; },
+    open:  function(){ show('prefs'); }
+  };
+
+  if(!st.decided) show('main');
+  if(location.hash === '#cookie-settings') show('prefs');
+})();
+</script>

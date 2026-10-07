@@ -32,6 +32,7 @@ The photo library is private because some photos show customers' number plates o
   - `graphic.mjs`: branded graphics
   - `photo.mjs`: crops photos and blurs number plates
   - `indexnow.mjs`: tells Bing and other engines about new posts after each publish
+  - `add-photos.py`: moves new photos from the library's `new-photos/` folder into the catalogue (WebP, GPS removed, duplicates skipped)
 - `snippets/squarespace-latest-posts.html`: "Latest from the blog" block for the Squarespace site
 
 ## Publishing
@@ -57,6 +58,18 @@ The same workflow also runs every morning, so a post given a future `publishedAt
 3. Settings → Pages → Custom domain: `blog.mobilepitstop.uk`. Then in Squarespace DNS add **CNAME** `blog` → `gabrielsiemionek-dotcom.github.io`. Once the check passes, tick **Enforce HTTPS**.
 4. Give Claude access to both repos, so the scheduled writing sessions can read the library and push posts.
 5. Add a **Blog** link to the Squarespace menu, and submit `https://blog.mobilepitstop.uk/sitemap.xml` in Google Search Console.
+
+## Adding new job photos
+
+Upload photos to the `new-photos/` folder of the private `mobilepitstop-blog-library` repo: on github.com, open the folder, then **Add file → Upload files**, drag the photos in and click **Commit changes**.
+
+At the start of each scheduled run, Claude:
+
+1. runs `scripts/add-photos.py`, which converts the photos and removes their location data
+2. looks at each new photo and writes a description, tags and privacy flags (number plates, houses, people)
+3. commits the catalogue
+
+New photos are available from that run onwards. Videos are ignored.
 
 ## Running things by hand
 
