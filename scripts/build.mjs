@@ -26,6 +26,11 @@ const TRACKING_HEAD = TRACKING
   ? (await readFile(path.join(ROOT, 'partials', 'consent-head.html'), 'utf8')).replace('{{GTM_ID}}', config.gtmId)
   : '';
 const TRACKING_BODY = TRACKING ? await readFile(path.join(ROOT, 'partials', 'consent-banner.html'), 'utf8') : '';
+// The <noscript> half of the Tag Manager snippet. It must come straight after <body>:
+// Search Console's "Google Tag Manager" verification looks for it there.
+const TRACKING_NOSCRIPT = TRACKING
+  ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${config.gtmId}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n`
+  : '';
 const DEFAULT_LANG = config.defaultLanguage.toLowerCase();
 const YEAR = new Date().getFullYear();
 
@@ -364,7 +369,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">` : ''}
 ${headExtra}
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+${TRACKING_NOSCRIPT}<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" aria-label="${esc(config.blogName)} home">
