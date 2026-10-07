@@ -1,0 +1,25 @@
+{
+  "title": "How to Get Rid of Cigarette Smell in a Car",
+  "status": "draft",
+  "publishedAt": "2026-10-08T07:00:00Z",
+  "language": "en",
+  "meta_description": "Cigarette smell lives in the roof lining, seats and vents, which is why air fresheners fail. What works at home, and how we remove it at the source.",
+  "excerpt": "Smoke smell sticks to the roof lining, seats and vents, so air fresheners only cover it for a few days. Here's what you can do yourself, and what it takes to remove it properly.",
+  "hero": { "src": "hero.webp", "alt": "Ozone generator on the armrest of a car with red leather seats, shown from two angles" },
+  "social": { "src": "social.webp" },
+  "keywords": ["get rid of cigarette smell in car", "smoke smell car", "car odour removal", "ozone treatment car"],
+  "faq": [
+    { "q": "Do air fresheners get rid of cigarette smell?", "a": "No. They cover the smell with a stronger one, but the tar and nicotine residue causing it stays in the fabric, roof lining and vents. Once the scent fades, the smoke smell comes back." },
+    { "q": "Is ozone safe to use in a car?", "a": "Only in an empty car, with no people or pets inside, and the car must be aired out properly before anyone gets back in. It works best after the interior has been cleaned, not instead of cleaning." },
+    { "q": "Will changing the cabin air filter get rid of smoke smell?", "a": "It helps, because an old filter keeps blowing smoky air back into the cabin. On its own it won't fix smell held in the seats, carpets and roof lining." },
+    { "q": "Will the smell come back after a treatment?", "a": "If the car is smoked in again, the smell will build up again. Removing the residue from the fabric first, then treating what's left, is what stops it creeping back on warm or damp days." }
+  ],
+  "cta": {
+    "heading": "Smoke smell won't shift?",
+    "text": "We remove the residue causing it, then treat what's left, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/cigarette/milk/bio-odour-removal"
+  },
+  "plan_id": "cigarette-smell",
+  "photos_used": ["P069", "P070", "P050", "P053", "P068"]
+}
