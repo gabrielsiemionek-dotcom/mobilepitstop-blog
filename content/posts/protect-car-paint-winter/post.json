@@ -1,20 +1,54 @@
 {
   "title": "How to Protect Your Car's Paint Before Winter",
-  "status": "draft",
-  "publishedAt": "2026-10-09T07:00:00Z",
+  "status": "published",
+  "publishedAt": "2026-10-09T06:58:19Z",
   "language": "en",
   "meta_description": "Road salt, grit and months of wet roads wear paint down. How to protect your car's paint before winter, what you can do yourself and when to do it.",
   "excerpt": "Salt, grit and wet roads are hard on paint, and the best time to protect it is before the gritters come out. Here's what to do, what you can manage yourself, and how we prepare a car for winter.",
-  "hero": { "src": "hero.webp", "alt": "Clean white Audi saloon on a frosty block-paved driveway after a wash" },
-  "social": { "src": "social.webp" },
-  "keywords": ["protect car paint winter", "winter car paint protection", "road salt car paint", "ceramic sealant winter", "winter car care"],
-  "faq": [
-    { "q": "When should I protect my car's paint for winter?", "a": "Ideally in October or early November, before the roads are gritted and while the weather is still dry and mild enough for a sealant to bond properly. Protecting a car in the middle of a wet winter is possible, but it's harder to get the paint clean and dry first." },
-    { "q": "Does road salt damage car paint?", "a": "Salt mixed with water speeds up rust where bare metal is exposed, such as stone chips, arch edges and the underside. On the paint itself it leaves a dull, gritty film that can scratch if it's wiped off dry." },
-    { "q": "Is a wax or a sealant better for winter?", "a": "Both help water and dirt run off. A sealant usually lasts longer than a traditional wax, which is why our Protection Detail uses a 6-month ceramic sealant applied before winter." },
-    { "q": "Do I still need to wash my car if it's protected?", "a": "Yes. Protection makes washing easier and gentler, but salty grime left on for weeks still wears it down. Rinsing salt off regularly, with a pre-wash and two buckets, keeps the protection working." }
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Clean white Audi saloon on a frosty block-paved driveway after a wash"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "protect car paint winter",
+    "winter car paint protection",
+    "road salt car paint",
+    "ceramic sealant winter",
+    "winter car care"
   ],
-  "cta": { "heading": "Get your paint ready for winter", "text": "A deep clean, clay bar and 6-month ceramic sealant, done at your home or workplace before the salt goes down. See what's included and book online.", "buttonLabel": "See prices and book", "buttonUrl": "https://mobilepitstop.uk/protection-detail" },
+  "faq": [
+    {
+      "q": "When should I protect my car's paint for winter?",
+      "a": "Ideally in October or early November, before the roads are gritted and while the weather is still dry and mild enough for a sealant to bond properly. Protecting a car in the middle of a wet winter is possible, but it's harder to get the paint clean and dry first."
+    },
+    {
+      "q": "Does road salt damage car paint?",
+      "a": "Salt mixed with water speeds up rust where bare metal is exposed, such as stone chips, arch edges and the underside. On the paint itself it leaves a dull, gritty film that can scratch if it's wiped off dry."
+    },
+    {
+      "q": "Is a wax or a sealant better for winter?",
+      "a": "Both help water and dirt run off. A sealant usually lasts longer than a traditional wax, which is why our Protection Detail uses a 6-month ceramic sealant applied before winter."
+    },
+    {
+      "q": "Do I still need to wash my car if it's protected?",
+      "a": "Yes. Protection makes washing easier and gentler, but salty grime left on for weeks still wears it down. Rinsing salt off regularly, with a pre-wash and two buckets, keeps the protection working."
+    }
+  ],
+  "cta": {
+    "heading": "Get your paint ready for winter",
+    "text": "A deep clean, clay bar and 6-month ceramic sealant, done at your home or workplace before the salt goes down. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/protection-detail"
+  },
   "plan_id": "winter-protection",
-  "photos_used": ["P043", "P044", "P037", "P046", "P030"]
+  "photos_used": [
+    "P043",
+    "P044",
+    "P037",
+    "P046",
+    "P030"
+  ]
 }
