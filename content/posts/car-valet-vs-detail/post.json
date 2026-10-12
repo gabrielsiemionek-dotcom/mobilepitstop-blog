@@ -1,0 +1,53 @@
+{
+  "title": "Car Valet vs Car Detail: What's the Difference?",
+  "status": "draft",
+  "publishedAt": "2026-10-12T07:00:00Z",
+  "language": "en",
+  "meta_description": "A valet cleans your car; a detail decontaminates, deep cleans and protects it. What each involves, which your car needs, and when the cheaper one will do.",
+  "excerpt": "A valet cleans your car; a detail goes further, with decontamination, proper interior work and protection. Here's what each involves, and how to tell which one your car actually needs.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "White BMW 3 Series covered in snow foam on a gravel yard, with a detailing van open behind it"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "car valet vs detail",
+    "difference between valet and detail",
+    "car detailing",
+    "full valet",
+    "which car valet do I need"
+  ],
+  "faq": [
+    {
+      "q": "Is a car detail better than a valet?",
+      "a": "Not always. A detail does more, including decontamination and protection, but a car that's already clean and protected only needs a careful wash to stay that way."
+    },
+    {
+      "q": "What's the difference between a mini valet and a full valet?",
+      "a": "The terms vary from business to business, but a mini valet is usually a wash, vacuum and wipe round, while a full valet spends more time on the interior. Check the list of steps rather than the name."
+    },
+    {
+      "q": "How do I know if my car's paint needs decontaminating?",
+      "a": "After washing, run your fingertips lightly over a panel. If it feels rough, or a light-coloured car has small orange specks, there's bonded contamination that needs chemical decontamination and often a clay bar."
+    },
+    {
+      "q": "Does a detail remove scratches?",
+      "a": "A detail with machine polishing removes most light swirls and water marks, but not all of them. Scratches that have gone through the clear coat need a body shop."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure which service you need?",
+    "text": "See every service side by side, or send us a few photos in daylight and we'll tell you straight, including when a cheaper one will do.",
+    "buttonLabel": "See all services",
+    "buttonUrl": "https://mobilepitstop.uk/all-services"
+  },
+  "plan_id": "valet-vs-detail",
+  "photos_used": [
+    "P006",
+    "P095",
+    "P032",
+    "P026"
+  ]
+}
