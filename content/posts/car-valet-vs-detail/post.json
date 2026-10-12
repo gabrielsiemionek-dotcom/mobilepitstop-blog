@@ -49,5 +49,29 @@
     "P095",
     "P032",
     "P026"
-  ]
+  ],
+  "share": {
+    "status": "pending",
+    "images": [
+      {
+        "src": "share-1.jpg",
+        "alt": "White BMW 3 Series covered in snow foam pre-wash"
+      },
+      {
+        "src": "share-2.jpg",
+        "alt": "Grey patterned fabric front seat after a deep clean"
+      },
+      {
+        "src": "share-3.jpg",
+        "alt": "Ceramic coating dropped onto a suede applicator by a gloved hand"
+      },
+      {
+        "src": "share-4.jpg",
+        "alt": "Ford Kuga with its doors open mid interior clean, our van and kit behind"
+      }
+    ],
+    "facebook": "Valet or detail? The names get used loosely, so the list of steps tells you more than the name on the price list.\n\nA valet cleans your car inside and out. A detail goes further: it removes the contamination a wash leaves behind, deals with the inside properly, and usually finishes with protection on the paint.\n\nOur new guide explains what each one involves and which your car actually needs. For a lot of cars, the honest answer is the cheaper one.",
+    "instagram": "Valet or detail? 🤔\n\nA valet cleans. A detail removes the contamination a wash leaves behind, deals with the inside properly and protects the paint.\n\nQuick test: run your fingertips over a freshly washed panel. If it feels rough, that's bonded contamination like tar and iron fallout, and shampoo won't shift it.\n\nFull guide on our blog, link in bio.\n\n#cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
+    "google": "Valet or detail? Our new guide explains what each one involves and how to tell which your car actually needs, including when the cheaper one will do."
+  }
 }
