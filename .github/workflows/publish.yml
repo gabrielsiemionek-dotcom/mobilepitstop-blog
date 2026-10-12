@@ -9,7 +9,7 @@ on:
     - cron: '7 6 * * *'   # daily rebuild, so posts given a future publish date go live on their day
 
 permissions:
-  contents: read
+  contents: write   # to commit the record of social posts back to main
   pages: write
   id-token: write
 
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -56,3 +56,26 @@ jobs:
       - name: Announce new posts (IndexNow)
         continue-on-error: true
         run: node scripts/indexnow.mjs --previous "$RUNNER_TEMP/live-articles.json"
+
+      # Post approved posts to Facebook, Instagram and Google Business Profile (through Make), then
+      # record what went out in post.json so nothing is posted twice. A failed platform stays
+      # "approved" and is retried on the next run (every push, and the daily rebuild).
+      # This step can never fail the publish.
+      - name: Post approved social posts
+        id: social
+        continue-on-error: true
+        env:
+          MPS_SOCIAL_HOOK: ${{ secrets.MPS_SOCIAL_HOOK }}
+          MPS_SOCIAL_TOKEN: ${{ secrets.MPS_SOCIAL_TOKEN }}
+        run: node scripts/share.mjs --approved
+
+      - name: Record social posts
+        if: always()
+        run: |
+          if git diff --quiet -- content/posts; then echo "Nothing to record."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/posts
+          git commit -m "Record social posts [skip ci]"
+          git pull --rebase -q origin main
+          git push -q origin HEAD:main
