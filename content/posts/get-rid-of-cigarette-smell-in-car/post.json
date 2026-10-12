@@ -49,5 +49,29 @@
     "P050",
     "P053",
     "P068"
-  ]
+  ],
+  "share": {
+    "status": "pending",
+    "images": [
+      {
+        "src": "share-1.jpg",
+        "alt": "Ozone generator on the console of a car with red leather seats"
+      },
+      {
+        "src": "share-2.jpg",
+        "alt": "Camper van rear bench seat with stains before cleaning"
+      },
+      {
+        "src": "share-3.jpg",
+        "alt": "The same camper bench seat after shampoo and extraction"
+      },
+      {
+        "src": "share-4.jpg",
+        "alt": "Setting the timer on an ozone generator"
+      }
+    ],
+    "facebook": "Cigarette smell in a car isn't in the air. It's a sticky film of tar and nicotine on the roof lining, seats, carpets, seatbelts and inside the vents, which is why an air freshener only covers it for a few days.\n\nGetting rid of it means taking that residue out, then treating what's left in the parts you can't scrub. Our new guide covers what you can do yourself, where DIY runs out, and how we deal with it on our jobs.",
+    "instagram": "Why does smoke smell come back after an air freshener? Because the smell is stuck to the surfaces, not floating in the air 🚭\n\nThe roof lining, seat fabric, carpets, seatbelts and vents all hold a film of tar and nicotine. It often smells worst on a warm day or after rain. The fix is removing the residue, then treating what's left.\n\nFull guide on our blog, link in bio.\n\n#odourremoval #smokesmell #cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
+    "google": "Cigarette smell in your car keeps coming back? Our new guide explains why air fresheners don't fix it, what you can do yourself, and what it takes to remove it properly."
+  }
 }

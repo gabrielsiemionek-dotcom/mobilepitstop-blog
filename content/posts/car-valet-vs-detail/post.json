@@ -51,7 +51,7 @@
     "P026"
   ],
   "share": {
-    "status": "pending",
+    "status": "posted",
     "images": [
       {
         "src": "share-1.jpg",
@@ -72,6 +72,21 @@
     ],
     "facebook": "Valet or detail? The names get used loosely, so the list of steps tells you more than the name on the price list.\n\nA valet cleans your car inside and out. A detail goes further: it removes the contamination a wash leaves behind, deals with the inside properly, and usually finishes with protection on the paint.\n\nOur new guide explains what each one involves and which your car actually needs. For a lot of cars, the honest answer is the cheaper one.",
     "instagram": "Valet or detail? 🤔\n\nA valet cleans. A detail removes the contamination a wash leaves behind, deals with the inside properly and protects the paint.\n\nQuick test: run your fingertips over a freshly washed panel. If it feels rough, that's bonded contamination like tar and iron fallout, and shampoo won't shift it.\n\nFull guide on our blog, link in bio.\n\n#cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
-    "google": "Valet or detail? Our new guide explains what each one involves and how to tell which your car actually needs, including when the cheaper one will do."
+    "google": "Valet or detail? Our new guide explains what each one involves and how to tell which your car actually needs, including when the cheaper one will do.",
+    "posted": {
+      "facebook": {
+        "at": "2026-10-12T11:29:21Z",
+        "id": "763098633548126_122175011984967013"
+      },
+      "instagram": {
+        "at": "2026-10-12T11:30:13Z",
+        "id": "17960682294247774"
+      },
+      "google": {
+        "at": "2026-10-12T11:30:21Z",
+        "id": "accounts/105706782953206192106/locations/11181836247395469230/localPosts/8462126557501011219",
+        "url": "https://local.google.com/place?id=15620201708594115788&use=posts&lpsid=CIHM0ogKEIqow_bDt6Sn3AE"
+      }
+    }
   }
 }

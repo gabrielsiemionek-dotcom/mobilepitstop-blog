@@ -50,5 +50,33 @@
     "P037",
     "P046",
     "P030"
-  ]
+  ],
+  "share": {
+    "status": "pending",
+    "images": [
+      {
+        "src": "share-1.jpg",
+        "alt": "White Audi A4 covered in snow foam on a frosty driveway"
+      },
+      {
+        "src": "share-2.jpg",
+        "alt": "The same white Audi A4 after the wash"
+      },
+      {
+        "src": "share-3.jpg",
+        "alt": "Water beading on a door and window after a sealant"
+      },
+      {
+        "src": "share-4.jpg",
+        "alt": "Water beading on a dark blue boot lid after protection"
+      },
+      {
+        "src": "share-5.jpg",
+        "alt": "Alloy wheel covered in snow foam"
+      }
+    ],
+    "facebook": "The best time to protect your car's paint for winter is before the gritters come out. For most of the North West, that means October or early November, while it's still dry and mild enough for a sealant to go on properly.\n\nGet the paint, wheels and arches properly clean, take off the contamination a normal wash leaves behind, then put a layer of protection on top. Our new guide explains why winter is hard on paint, what you can do yourself and how to keep it right until spring.",
+    "instagram": "Protect your paint before the gritters come out ❄️\n\nSalt, grit and months of wet roads are hard on paint. A layer of protection makes salt and grime harder to stick and easier to rinse off, so every winter wash is quicker and gentler. October and early November are the time to do it.\n\nFull guide on our blog, link in bio.\n\n#winterprep #cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
+    "google": "Protect your car's paint before winter. Our new guide explains why salt and grit are hard on paint, what you can do yourself, and how we prepare a car for winter."
+  }
 }

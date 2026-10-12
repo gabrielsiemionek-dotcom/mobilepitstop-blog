@@ -130,7 +130,7 @@ async function check(dir) {
   // share: the social posts (Facebook, Instagram, Google Business Profile) sent when the post is published
   if (meta.share) {
     const sh = meta.share;
-    if (!['pending', 'posted', 'skipped'].includes(sh.status)) errors.push('share.status must be "pending", "posted" or "skipped"');
+    if (!['pending', 'approved', 'posted', 'skipped'].includes(sh.status)) errors.push('share.status must be "pending", "approved", "posted" or "skipped"');
     const imgs = Array.isArray(sh.images) ? sh.images : [];
     if (imgs.length < 2 || imgs.length > 10) errors.push(`share.images needs 2-10 images (an Instagram carousel needs at least 2; has ${imgs.length})`);
     for (const im of imgs) {

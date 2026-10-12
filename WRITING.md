@@ -109,7 +109,7 @@ Every post gets a `share` section in `post.json`. When Gab replies "publish", th
 - **Instagram:** the same idea, written for people who won't click: give one practical tip in the caption, then "Full guide on our blog, link in bio". 3-8 hashtags at the end, a mix of the service and local ones (#cardetailing #carvalet #cheshire #wirral #chester). No links, because they aren't clickable. At most one emoji.
 - **Google Business Profile:** 1-3 sentences, plain, with no hashtags and no emoji. The "Learn more" button links to the post.
 - The same hard rules apply as for the post: facts only from facts.json, no unconfirmed prices, no guarantees, UK English, and the banned phrases. `check-post` checks the captions too.
-- `status` stays `"pending"` until the routine has posted them, then becomes `"posted"` with a `posted` record. If Gab says "publish, no social", set it to `"skipped"`.
+- `status` is `"pending"` while waiting for Gab, `"approved"` once he has said yes, and `"posted"` when `scripts/share.mjs` has posted to all three platforms (it records each one under `posted`, and refuses anything that isn't approved). If Gab says "publish, no social", set it to `"skipped"`.
 
 ## Files
 
