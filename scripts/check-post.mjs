@@ -132,7 +132,7 @@ async function check(dir) {
     const sh = meta.share;
     if (!['pending', 'posted', 'skipped'].includes(sh.status)) errors.push('share.status must be "pending", "posted" or "skipped"');
     const imgs = Array.isArray(sh.images) ? sh.images : [];
-    if (imgs.length < 1 || imgs.length > 10) errors.push(`share.images needs 1-10 images (has ${imgs.length})`);
+    if (imgs.length < 2 || imgs.length > 10) errors.push(`share.images needs 2-10 images (an Instagram carousel needs at least 2; has ${imgs.length})`);
     for (const im of imgs) {
       if (!im.src || !/\.jpe?g$/i.test(im.src)) errors.push(`share image ${im.src} must be a .jpg (Instagram only accepts JPEG)`);
       else if (!existsSync(path.join(dir, im.src))) errors.push(`share image ${im.src} not found in the post folder`);
@@ -143,6 +143,7 @@ async function check(dir) {
     if (ig.length > 2200) errors.push(`share.instagram is ${ig.length} characters (Instagram's limit is 2,200)`);
     if ((ig.match(/#[\p{L}\d_]+/gu) || []).length > 10) warnings.push('share.instagram has more than 10 hashtags (aim for 3-8)');
     if (/https?:\/\//.test(ig)) warnings.push('share.instagram contains a link; Instagram captions don\'t make links clickable');
+    if (/https?:\/\//.test(String(sh.facebook || ''))) warnings.push('share.facebook contains a link; the article link is added at the end automatically');
     const gb = String(sh.google || '');
     if (gb.length > 1500) errors.push(`share.google is ${gb.length} characters (Google's limit is 1,500)`);
     const capt = `${sh.facebook || ''} ${ig} ${gb}`.toLowerCase();

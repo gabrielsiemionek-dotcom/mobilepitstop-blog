@@ -104,8 +104,8 @@ Every post gets a `share` section in `post.json`. When Gab replies "publish", th
 }
 ```
 
-- **Images:** 1-5 of Gab's real job photos, made with `node scripts/photo.mjs <library photo> content/posts/<slug>/share-1.jpg --aspect 4:5 --width 1080`. Blur plates and house numbers the same way as for the post. Use photos only, not branded graphics. The first image is the one people see in the feed, so make it the strongest after shot or before/after. Instagram crops a carousel to the first image's shape, which is why they're all 4:5.
-- **Facebook:** 2-4 short paragraphs: the useful point of the post, then an invitation to read it. Don't paste the link; it's attached automatically.
+- **Images:** 2-5 of Gab's real job photos (an Instagram carousel needs at least 2), made with `node scripts/photo.mjs <library photo> content/posts/<slug>/share-1.jpg --aspect 4:5 --width 1080`. Blur plates and house numbers the same way as for the post. Use photos only, not branded graphics. The first image is the one people see in the feed, so make it the strongest after shot or before/after. Instagram crops a carousel to the first image's shape, which is why they're all 4:5.
+- **Facebook:** 2-4 short paragraphs: the useful point of the post, then an invitation to read it. Don't paste the link: it's added on its own line at the end automatically.
 - **Instagram:** the same idea, written for people who won't click: give one practical tip in the caption, then "Full guide on our blog, link in bio". 3-8 hashtags at the end, a mix of the service and local ones (#cardetailing #carvalet #cheshire #wirral #chester). No links, because they aren't clickable. At most one emoji.
 - **Google Business Profile:** 1-3 sentences, plain, with no hashtags and no emoji. The "Learn more" button links to the post.
 - The same hard rules apply as for the post: facts only from facts.json, no unconfirmed prices, no guarantees, UK English, and the banned phrases. `check-post` checks the captions too.
