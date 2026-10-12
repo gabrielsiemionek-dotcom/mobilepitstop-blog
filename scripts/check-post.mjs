@@ -166,7 +166,10 @@ async function check(dir) {
   for (const f of await readdir(dir)) {
     if (/\.(webp|png|jpe?g)$/i.test(f)) {
       const s = (await stat(path.join(dir, f))).size;
-      if (s > 300 * 1024) warnings.push(`${f} is ${Math.round(s / 1024)} KB (keep images under 250 KB)`);
+      // share-N.jpg are only fetched by Facebook / Instagram / Google, never shown on the page
+      if (/^share-\d+\.jpe?g$/i.test(f)) {
+        if (s > 1024 * 1024) warnings.push(`${f} is ${Math.round(s / 1024)} KB (keep share images under 1 MB)`);
+      } else if (s > 300 * 1024) warnings.push(`${f} is ${Math.round(s / 1024)} KB (keep images under 250 KB)`);
       if (!/\.webp$/i.test(f) && !/^share-\d+\.jpe?g$/i.test(f)) warnings.push(`${f} isn't WebP`);
     }
   }

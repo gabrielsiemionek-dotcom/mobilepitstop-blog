@@ -81,7 +81,7 @@ if (opt.aspect) {
 await mkdir(path.dirname(path.resolve(out)), { recursive: true });
 const resized = base.resize({ width: opt.width, withoutEnlargement: true });
 // .jpg output is for social posts (Instagram only accepts JPEG); everything else is WebP.
-const res = await (/\.jpe?g$/i.test(out) ? resized.jpeg({ quality: 82, mozjpeg: true }) : resized.webp({ quality: 80 })).toFile(out);
+const res = await (/\.jpe?g$/i.test(out) ? resized.jpeg({ quality: 78, mozjpeg: true }) : resized.webp({ quality: 80 })).toFile(out);
 console.log(`${out}  ${res.width}x${res.height}  ${Math.round(res.size / 1024)} KB`);
 
 function clamp(n, lo, hi) {
