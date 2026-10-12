@@ -127,6 +127,31 @@ async function check(dir) {
   }
   if (serviceLinks < 2) warnings.push(`${serviceLinks} links to MobilePitStop pages (aim for 2-4)`);
 
+  // share: the social posts (Facebook, Instagram, Google Business Profile) sent when the post is published
+  if (meta.share) {
+    const sh = meta.share;
+    if (!['pending', 'posted', 'skipped'].includes(sh.status)) errors.push('share.status must be "pending", "posted" or "skipped"');
+    const imgs = Array.isArray(sh.images) ? sh.images : [];
+    if (imgs.length < 1 || imgs.length > 10) errors.push(`share.images needs 1-10 images (has ${imgs.length})`);
+    for (const im of imgs) {
+      if (!im.src || !/\.jpe?g$/i.test(im.src)) errors.push(`share image ${im.src} must be a .jpg (Instagram only accepts JPEG)`);
+      else if (!existsSync(path.join(dir, im.src))) errors.push(`share image ${im.src} not found in the post folder`);
+      if (!im.alt || im.alt.length < 8) errors.push(`share image ${im.src} needs descriptive alt text`);
+    }
+    for (const k of ['facebook', 'instagram', 'google']) if (!sh[k] || !String(sh[k]).trim()) errors.push(`share.${k} caption is missing`);
+    const ig = String(sh.instagram || '');
+    if (ig.length > 2200) errors.push(`share.instagram is ${ig.length} characters (Instagram's limit is 2,200)`);
+    if ((ig.match(/#[\p{L}\d_]+/gu) || []).length > 10) warnings.push('share.instagram has more than 10 hashtags (aim for 3-8)');
+    if (/https?:\/\//.test(ig)) warnings.push('share.instagram contains a link; Instagram captions don\'t make links clickable');
+    const gb = String(sh.google || '');
+    if (gb.length > 1500) errors.push(`share.google is ${gb.length} characters (Google's limit is 1,500)`);
+    const capt = `${sh.facebook || ''} ${ig} ${gb}`.toLowerCase();
+    for (const b of BANNED) if (capt.includes(b)) errors.push(`a share caption uses the banned phrase "${b}"`);
+    for (const m of capt.matchAll(/£\s?(\d[\d,.]*)/g)) {
+      if (!allowedPrices.has(m[1].replace(/,/g, ''))) errors.push(`a share caption mentions a price (£${m[1]}) that isn't confirmed in facts.json`);
+    }
+  } else if (meta.status === 'draft') warnings.push('no share section, so nothing will be posted to Facebook, Instagram or Google');
+
   // images
   for (const m of body.matchAll(/<img\b[^>]*>/gi)) {
     const tag = m[0];
@@ -141,7 +166,7 @@ async function check(dir) {
     if (/\.(webp|png|jpe?g)$/i.test(f)) {
       const s = (await stat(path.join(dir, f))).size;
       if (s > 300 * 1024) warnings.push(`${f} is ${Math.round(s / 1024)} KB (keep images under 250 KB)`);
-      if (!/\.webp$/i.test(f)) warnings.push(`${f} isn't WebP`);
+      if (!/\.webp$/i.test(f) && !/^share-\d+\.jpe?g$/i.test(f)) warnings.push(`${f} isn't WebP`);
     }
   }
   return { errors: [...new Set(errors)], warnings: [...new Set(warnings)] };

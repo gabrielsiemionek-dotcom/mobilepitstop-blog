@@ -28,6 +28,21 @@ const pagePath = path.join(dist, slug, 'index.html');
 if (!existsSync(pagePath)) throw new Error(`No built page for "${slug}". Is the folder name right?`);
 let html = await readFile(pagePath, 'utf8');
 
+// Show the social posts (sent to Facebook, Instagram and Google when the post is published) under the post.
+const meta = JSON.parse(await readFile(path.join(ROOT, 'content', 'posts', slug, 'post.json'), 'utf8'));
+if (meta.share) {
+  const esc = (t) => String(t || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const box = 'max-width:760px;margin:40px auto;padding:20px;border:2px dashed #999;border-radius:12px;font-family:system-ui,sans-serif';
+  const imgs = (meta.share.images || [])
+    .map((im) => `<img src="${esc(im.src)}" alt="${esc(im.alt)}" style="width:180px;height:auto;border-radius:8px;margin:0 8px 8px 0">`)
+    .join('');
+  const cap = (label, t) => `<h3 style="margin:18px 0 6px">${label}</h3><p style="white-space:pre-wrap;margin:0">${esc(t)}</p>`;
+  const panel = `<section style="${box}"><h2 style="margin-top:0">Social posts (sent when you reply "publish")</h2>
+<p style="margin:0 0 10px">Status: ${esc(meta.share.status)}. The Facebook and Google posts link to the article.</p>${imgs}
+${cap('Facebook', meta.share.facebook)}${cap('Instagram', meta.share.instagram)}${cap('Google Business Profile', meta.share.google)}</section>`;
+  html = html.replace('</body>', `${panel}</body>`);
+}
+
 const css = await readFile(path.join(dist, 'assets', 'blog.css'), 'utf8');
 html = html.replace(/<link rel="stylesheet" href="[^"]+">/, `<style>${css}</style>`);
 

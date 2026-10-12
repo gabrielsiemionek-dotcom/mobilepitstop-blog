@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Prepare one of Gab's job photos for a post: blur number plates, crop to a shape, resize, save as WebP.
+// Prepare one of Gab's job photos for a post: blur number plates, crop to a shape, resize, save as WebP
+// (or JPEG when <out> ends in .jpg, for the social share images).
 //
 //   node scripts/photo.mjs <source> <out.webp> [options]
 //
@@ -8,6 +9,9 @@
 //   --focus 0.5,0.5      the point to keep in the middle when cropping (x,y)
 //   --blur x,y,w,h       blur a box, e.g. a number plate. Repeat for more boxes.
 //   --width 1600         output width in pixels (default 1600, never enlarged)
+//
+// Social share image (Instagram 4:5, 1080 wide, JPEG):
+//   node scripts/photo.mjs <source> content/posts/my-post/share-1.jpg --aspect 4:5 --width 1080 [--blur ...]
 //
 // Example: a portrait photo as a 16:9 hero, keeping the lower half, with a plate blurred
 //   node scripts/photo.mjs ../mobilepitstop-photos/photos/P028.webp content/posts/my-post/hero.webp \
@@ -75,7 +79,9 @@ if (opt.aspect) {
 }
 
 await mkdir(path.dirname(path.resolve(out)), { recursive: true });
-const res = await base.resize({ width: opt.width, withoutEnlargement: true }).webp({ quality: 80 }).toFile(out);
+const resized = base.resize({ width: opt.width, withoutEnlargement: true });
+// .jpg output is for social posts (Instagram only accepts JPEG); everything else is WebP.
+const res = await (/\.jpe?g$/i.test(out) ? resized.jpeg({ quality: 82, mozjpeg: true }) : resized.webp({ quality: 80 })).toFile(out);
 console.log(`${out}  ${res.width}x${res.height}  ${Math.round(res.size / 1024)} KB`);
 
 function clamp(n, lo, hi) {

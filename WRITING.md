@@ -87,6 +87,30 @@ In `body.html`:
 </figure>
 ```
 
+## Social posts
+
+Every post gets a `share` section in `post.json`. When Gab replies "publish", these go to the MobilePitStop Facebook Page, Instagram and Google Business Profile, once each. Gab approves them together with the post, in the same preview.
+
+```json
+"share": {
+  "status": "pending",
+  "images": [
+    { "src": "share-1.jpg", "alt": "…" },
+    { "src": "share-2.jpg", "alt": "…" }
+  ],
+  "facebook": "…",
+  "instagram": "…",
+  "google": "…"
+}
+```
+
+- **Images:** 1-5 of Gab's real job photos, made with `node scripts/photo.mjs <library photo> content/posts/<slug>/share-1.jpg --aspect 4:5 --width 1080`. Blur plates and house numbers the same way as for the post. Use photos only, not branded graphics. The first image is the one people see in the feed, so make it the strongest after shot or before/after. Instagram crops a carousel to the first image's shape, which is why they're all 4:5.
+- **Facebook:** 2-4 short paragraphs: the useful point of the post, then an invitation to read it. Don't paste the link; it's attached automatically.
+- **Instagram:** the same idea, written for people who won't click: give one practical tip in the caption, then "Full guide on our blog, link in bio". 3-8 hashtags at the end, a mix of the service and local ones (#cardetailing #carvalet #cheshire #wirral #chester). No links, because they aren't clickable. At most one emoji.
+- **Google Business Profile:** 1-3 sentences, plain, with no hashtags and no emoji. The "Learn more" button links to the post.
+- The same hard rules apply as for the post: facts only from facts.json, no unconfirmed prices, no guarantees, UK English, and the banned phrases. `check-post` checks the captions too.
+- `status` stays `"pending"` until the routine has posted them, then becomes `"posted"` with a `posted` record. If Gab says "publish, no social", set it to `"skipped"`.
+
 ## Files
 
 Each post is a folder: `content/posts/<slug>/`
@@ -112,7 +136,7 @@ Each post is a folder: `content/posts/<slug>/`
   ```
 
 - `body.html`. Allowed tags: `p h2 h3 ul ol li strong em a figure img figcaption table thead tbody tr th td blockquote`. No inline styles, no scripts, no `<h1>`.
-- Image files: `hero.webp`, `social.webp`, plus anything the body uses. Don't repeat the hero photo in the body.
+- Image files: `hero.webp`, `social.webp` (the link preview image), `share-1.jpg`… (the social post photos), plus anything the body uses. Don't repeat the hero photo in the body.
 
 - **Slug:** lowercase words and dashes, based on the main keyword, with no dates. For example `get-dog-hair-out-of-car-seats`.
 - **Status:** a post stays `"draft"` until Gab approves it. Approval flips it to `"published"` and sets `publishedAt` to the publish time.
