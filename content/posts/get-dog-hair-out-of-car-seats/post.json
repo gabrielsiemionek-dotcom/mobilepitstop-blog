@@ -50,7 +50,7 @@
     "src": "social.webp"
   },
   "share": {
-    "status": "approved",
+    "status": "posted",
     "images": [
       {
         "src": "share-1.jpg",
@@ -71,6 +71,21 @@
     ],
     "facebook": "Hoovered the boot three times and the dog hair's still there? That's normal. Short, coarse hairs work their way into the carpet fibres, and a vacuum pulls air around them rather than lifting them out.\n\nThe fix is to loosen the hair first and vacuum it out second. Our new guide covers the at-home method that works (a damp rubber glove, a pet hair brush and a crevice tool), where DIY runs out, and how we deal with it on our jobs.",
     "instagram": "Before and after: a boot lining that had already been hoovered more than once 🐕\n\nDog hair hooks into carpet fibres, so a vacuum alone leaves loads behind. Loosen it first: a slightly damp rubber glove, short strokes in one direction, and the hair rolls up into clumps. Then vacuum with a crevice tool against the pile.\n\nFull guide on our blog, link in bio.\n\n#doghair #pethair #cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
-    "google": "Dog hair that won't come out of your car carpet? Our new guide explains why a hoover alone leaves so much behind, the at-home method that works, and when it needs a proper interior clean."
+    "google": "Dog hair that won't come out of your car carpet? Our new guide explains why a hoover alone leaves so much behind, the at-home method that works, and when it needs a proper interior clean.",
+    "posted": {
+      "facebook": {
+        "at": "2026-10-12T11:50:57Z",
+        "id": "763098633548126_122175015848967013"
+      },
+      "instagram": {
+        "at": "2026-10-12T11:51:58Z",
+        "id": "18110005460075306"
+      },
+      "google": {
+        "at": "2026-10-12T11:52:00Z",
+        "id": "accounts/105706782953206192106/locations/11181836247395469230/localPosts/7929204023306476551",
+        "url": "https://local.google.com/place?id=15620201708594115788&use=posts&lpsid=CIHM0ogKEM7YuoGPiKV9"
+      }
+    }
   }
 }

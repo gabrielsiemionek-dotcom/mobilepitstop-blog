@@ -51,7 +51,7 @@
     "P068"
   ],
   "share": {
-    "status": "approved",
+    "status": "posted",
     "images": [
       {
         "src": "share-1.jpg",
@@ -72,6 +72,21 @@
     ],
     "facebook": "Cigarette smell in a car isn't in the air. It's a sticky film of tar and nicotine on the roof lining, seats, carpets, seatbelts and inside the vents, which is why an air freshener only covers it for a few days.\n\nGetting rid of it means taking that residue out, then treating what's left in the parts you can't scrub. Our new guide covers what you can do yourself, where DIY runs out, and how we deal with it on our jobs.",
     "instagram": "Why does smoke smell come back after an air freshener? Because the smell is stuck to the surfaces, not floating in the air 🚭\n\nThe roof lining, seat fabric, carpets, seatbelts and vents all hold a film of tar and nicotine. It often smells worst on a warm day or after rain. The fix is removing the residue, then treating what's left.\n\nFull guide on our blog, link in bio.\n\n#odourremoval #smokesmell #cardetailing #carvalet #mobilevaleting #cheshire #merseyside #flintshire",
-    "google": "Cigarette smell in your car keeps coming back? Our new guide explains why air fresheners don't fix it, what you can do yourself, and what it takes to remove it properly."
+    "google": "Cigarette smell in your car keeps coming back? Our new guide explains why air fresheners don't fix it, what you can do yourself, and what it takes to remove it properly.",
+    "posted": {
+      "facebook": {
+        "at": "2026-10-12T11:55:17Z",
+        "id": "763098633548126_122175017366967013"
+      },
+      "instagram": {
+        "at": "2026-10-12T11:55:41Z",
+        "id": "18118751443958414"
+      },
+      "google": {
+        "at": "2026-10-12T11:55:43Z",
+        "id": "accounts/105706782953206192106/locations/11181836247395469230/localPosts/3359627074007840460",
+        "url": "https://local.google.com/place?id=15620201708594115788&use=posts&lpsid=CIHM0ogKELyakvi-v8OsVA"
+      }
+    }
   }
 }
