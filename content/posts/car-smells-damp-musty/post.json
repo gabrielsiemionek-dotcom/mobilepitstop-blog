@@ -52,7 +52,7 @@
     "P011"
   ],
   "share": {
-    "status": "approved",
+    "status": "posted",
     "images": [
       {
         "src": "share-1.jpg",
@@ -73,6 +73,21 @@
     ],
     "facebook": "A damp or musty smell in your car almost always means water is sitting somewhere it shouldn't: in the carpet underlay, the boot floor or the air con. An air freshener won't touch it, because the source is still there.\n\nThis time of year it's usually wet shoes, damp coats and misty windows, but blocked drains and tired seals are common too. Our new guide covers how to find where the smell is coming from, what you can dry out yourself, and when it needs proper extraction.",
     "instagram": "Car smells musty? Take the mats out and press your hand firmly into the carpet underneath 🍂\n\nThe top can feel dry while the thick underlay below is still wet, and that's where the smell comes from. Dry the mats indoors, soak up what you can with towels, and leave the doors open on a dry day. If it's soaked through or keeps coming back, it needs extraction, not an air freshener.\n\nFull guide on our blog, link in bio.\n\n#odourremoval #carinterior #cardetailing #carvalet #mobilevaleting #cheshire #wirral #flintshire",
-    "google": "Damp or musty smell in your car? Our new guide explains what causes it, how to find the source and dry it out yourself, and when it needs a proper clean and treatment."
+    "google": "Damp or musty smell in your car? Our new guide explains what causes it, how to find the source and dry it out yourself, and when it needs a proper clean and treatment.",
+    "posted": {
+      "facebook": {
+        "at": "2026-10-14T09:01:28Z",
+        "id": "763098633548126_122175281384967013"
+      },
+      "instagram": {
+        "at": "2026-10-14T09:02:19Z",
+        "id": "18013456208991586"
+      },
+      "google": {
+        "at": "2026-10-14T09:02:21Z",
+        "id": "accounts/105706782953206192106/locations/11181836247395469230/localPosts/7887680977120593805",
+        "url": "https://local.google.com/place?id=15620201708594115788&use=posts&lpsid=CIHM0ogKEM_a-JyciO3VuAE"
+      }
+    }
   }
 }
