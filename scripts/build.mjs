@@ -350,6 +350,7 @@ function layout({ lang, title, description, canonical, image, ogType = 'website'
 <meta charset="utf-8">
 ${TRACKING_HEAD}
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer-when-downgrade">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 ${noindex ? '<meta name="robots" content="noindex">' : ''}
