@@ -1,6 +1,6 @@
 {
   "_readme": "The only source of business facts for blog posts. If something isn't here, don't state it. Prices stay out of posts until Gab adds confirmed ones to 'prices'. Items under 'check_with_gab' must not be stated as fact.",
-  "updated": "2026-10-06",
+  "updated": "2026-10-14",
 
   "business": {
     "name": "MobilePitStop - Valeting & Detailing",
@@ -8,7 +8,8 @@
     "owner": "Gabriel (Gab) Siemionek",
     "type": "Mobile car valeting and detailing, plus garage-based work at a unit in Birkenhead",
     "positioning": "A detailer, not a car wash. Explain the method and why it matters. Never present the service as a quick wash.",
-    "mobile": "Comes to the customer's home or workplace, roughly within 20 miles of Ellesmere Port",
+    "mobile": "Comes to the customer's home or workplace across Cheshire, Merseyside and Flintshire",
+    "base": "Runcorn (moved from Ellesmere Port, Oct 2026). Customers don't visit the base, so never give a street address",
     "areas": ["Cheshire", "Merseyside", "Flintshire"],
     "towns": ["Ellesmere Port", "Chester", "Runcorn", "Northwich", "Crewe", "Nantwich", "Knutsford", "Wilmslow", "Macclesfield", "Congleton", "Liverpool", "Birkenhead", "Wallasey", "Bootle", "Southport", "Formby", "St Helens", "Prescot", "Huyton", "Kirkby", "Mold", "Flint", "Connah's Quay", "Holywell", "Buckley", "Shotton", "Hawarden", "Queensferry", "Bagillt", "Caergwrle"],
     "phone_display": "07592 196929",
@@ -112,13 +113,13 @@
     "all_services": "https://mobilepitstop.uk/all-services",
     "reviews": "https://mobilepitstop.uk/reviews",
     "faqs": "https://mobilepitstop.uk/faqs",
-    "contact": "https://mobilepitstop.uk/contact-we-respond-24/7",
-    "our_approach": "https://mobilepitstop.uk/learn-our-way-of-doing-things",
+    "contact": "https://mobilepitstop.uk/contact",
+    "about": "https://mobilepitstop.uk/about",
     "hand_car_washes_article": "https://mobilepitstop.uk/why-hand-car-washes-scratch-your-paint",
-    "seat_shampooing": "https://mobilepitstop.uk/seat-shampooing-in-cheshire",
-    "pet_hair_stain_odour": "https://mobilepitstop.uk/pet-hair-stain-and-odour-removal-in-cheshire",
-    "steam_cleaning": "https://mobilepitstop.uk/steam-cleaning-in-cheshire",
-    "upholstery": "https://mobilepitstop.uk/upholstery-cleaning-service-cheshire",
+    "seat_shampooing": "https://mobilepitstop.uk/interior-deep-clean",
+    "pet_hair_stain_odour": "https://mobilepitstop.uk/interior-deep-clean",
+    "steam_cleaning": "https://mobilepitstop.uk/interior-deep-clean",
+    "upholstery": "https://mobilepitstop.uk/interior-deep-clean",
     "town_page_pattern": "https://mobilepitstop.uk/mobile-valeting-service-<town-slug> (e.g. mobile-valeting-service-chester, mobile-valeting-service-connahs-quay, mobile-valeting-service-st-helens)"
   },
 
@@ -128,6 +129,8 @@
     "Current prices for every service (posts carry no prices until these are confirmed here)",
     "How long the In & Out Deep Clean's protection wax lasts",
     "Whether full extraction is now included in the Interior Deep Clean",
-    "Exact ceramic coating durations offered"
+    "Exact ceramic coating durations offered",
+    "How far the free travel goes from Runcorn, and what travel costs beyond it (don't state a distance until it's here)",
+    "Which towns to name: the main big ones from the new base (list to confirm)"
   ]
 }
