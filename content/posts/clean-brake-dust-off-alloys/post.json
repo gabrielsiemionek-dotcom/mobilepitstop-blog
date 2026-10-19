@@ -56,7 +56,7 @@
     "applied": "No search data for this topic yet (LOW confidence); title kept in searchers' own 'How to X' phrasing as insights suggests"
   },
   "share": {
-    "status": "approved",
+    "status": "posted",
     "images": [
       {
         "src": "share-1.jpg",
@@ -77,6 +77,20 @@
     ],
     "facebook": "Alloys gone brown? That's brake dust. It's full of tiny iron particles from the discs, and once they get wet they rust onto the wheel, which is why a quick rinse doesn't shift them.\n\nThe fix isn't a stronger cleaner. Strong acid wheel cleaners can stain polished and diamond-cut finishes. A non-acid wheel cleaner, soft brushes and an iron fallout remover get the brown off safely.\n\nOur new guide explains why alloys go brown, the safe way to clean them at home, and how to tell when it's damage rather than dirt.",
     "instagram": "Alloys gone brown? 🛞\n\nOne tip: let the wheels cool before you clean them. Cleaner sprayed on a hot wheel dries before you can rinse it and can leave marks. Then use a non-acid wheel cleaner and an iron fallout remover for the brown that's left.\n\nFull guide on our blog, link in bio.\n\n#alloywheels #wheelcleaning #cardetailing #carvalet #cheshire #wirral #chester",
-    "google": "Brake dust turning your alloys brown? Our new guide explains why it happens, the safe way to clean it off at home, and how to tell when it's damage rather than dirt."
+    "google": "Brake dust turning your alloys brown? Our new guide explains why it happens, the safe way to clean it off at home, and how to tell when it's damage rather than dirt.",
+    "posted": {
+      "facebook": {
+        "at": "2026-10-19T07:47:23Z",
+        "id": "763098633548126_122175931046967013"
+      },
+      "instagram": {
+        "at": "2026-10-19T07:48:12Z",
+        "id": "17954962614038174"
+      },
+      "google": {
+        "at": "2026-10-19T07:48:14Z",
+        "id": "accounts/105706782953206192106/locations/11181836247395469230/localPosts/3653964122859955562"
+      }
+    }
   }
 }
