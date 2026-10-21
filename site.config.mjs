@@ -35,7 +35,8 @@ export default {
     phoneDisplay: '07592 196929',
     phoneTel: '+447592196929',
     email: 'mobilepitstopvalet@gmail.com',
-    address: '86a Wolverham Road, Ellesmere Port, CH65 5BY',
+    // Town only: customers don't visit the base, so no street address (matches the Google profile).
+    address: 'Based in Runcorn, Cheshire',
     areas: 'Cheshire, Merseyside and Flintshire',
   },
 
