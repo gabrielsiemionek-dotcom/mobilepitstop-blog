@@ -1,0 +1,65 @@
+{
+  "title": "Valeting a Car Before You Sell It: What's Worth Doing",
+  "status": "draft",
+  "publishedAt": "2026-10-21T07:00:00Z",
+  "language": "en",
+  "meta_description": "What buyers notice first when they view a used car, what you can clean yourself before selling, and which valet is worth paying for (and which isn't).",
+  "excerpt": "Buyers judge a used car in the first minute, from the photos and the smell. Here's what's worth cleaning before you sell, what you can do yourself, and what isn't worth the money.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Front wing, headlight and alloy wheel of a pearl white BMW 3 Series, freshly washed on a wet yard"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "valet car before selling",
+    "clean car before selling",
+    "is it worth valeting a car before selling",
+    "prepare car for sale",
+    "car valet for sale"
+  ],
+  "faq": [
+    {
+      "q": "Is it worth valeting a car before selling it?",
+      "a": "Usually, yes. A clean car photographs better and looks looked-after when a buyer opens the door. Spend on cleaning, not on long-term protection like coatings, which mainly benefit the next owner."
+    },
+    {
+      "q": "Which valet should I book before selling my car?",
+      "a": "For a car that hasn't been properly cleaned for a while, an In & Out Deep Clean resets the inside and outside together. If only the interior is tired, an Interior Deep Clean may be enough. Send us a few photos in daylight and we'll tell you straight which one it needs."
+    },
+    {
+      "q": "Will an air freshener hide a smell from buyers?",
+      "a": "Not really. Buyers can usually smell the freshener and the odour underneath it. The smell needs removing at the source, from the fabric, carpets and vents."
+    },
+    {
+      "q": "When should I get my car cleaned before selling?",
+      "a": "Before you take the listing photos, ideally a few days before the car goes online. That way the photos, the viewings and the handover all show the same clean car."
+    }
+  ],
+  "cta": {
+    "heading": "Getting your car ready to sell?",
+    "text": "An In & Out Deep Clean resets the whole car, inside and out, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/in-out-deep-clean"
+  },
+  "plan_id": "selling-car",
+  "photos_used": ["P010", "P072", "P065", "P081", "P007"],
+  "insights": {
+    "from": "2026-10-15",
+    "target_queries": [],
+    "applied": "LOW confidence and no search data for this topic yet; kept the title in searchers' own wording and linked the smell posts, since smell topics draw the most impressions"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "Pearl white BMW 3 Series front three-quarter after a full exterior clean, on a wet yard" },
+      { "src": "share-2.jpg", "alt": "Mercedes E-Class front interior after cleaning: black leather seat, steering wheel and AMG floor mat" },
+      { "src": "share-3.jpg", "alt": "BMW 3 Series front interior after cleaning, black leather seat and steering wheel, door open" },
+      { "src": "share-4.jpg", "alt": "Grey Audi A1 front wing and two-tone alloy wheel after an exterior clean" }
+    ],
+    "facebook": "Selling your car? Buyers make up their mind in the first minute, from the listing photos and from what they smell and touch when they open the door.\n\nThe things they notice first are the smell, the driver's seat and steering wheel, the footwells and boot, the wheels and the glass. A proper clean of those is worth doing. A ceramic coating or paint correction right before a sale usually isn't, because the next owner gets the benefit.\n\nOur new guide covers what buyers notice, what you can do yourself, and which clean is worth paying for.",
+    "instagram": "Selling your car? One tip: clean it before you take the listing photos, not after.\n\nBuyers judge a car from the photos first. Clean wheels, clear glass and a fresh interior show up on camera, and dull paint and brown alloys do too. Clear out the door pockets and boot, then shoot it on a bright, overcast day against a plain background.\n\nFull guide on our blog, link in bio.\n\n#carvalet #cardetailing #sellingmycar #usedcars #cheshire #wirral #chester",
+    "google": "Getting a car ready to sell? Our new guide explains what buyers notice first, what you can clean yourself, and which valet is worth paying for before you list it."
+  }
+}
