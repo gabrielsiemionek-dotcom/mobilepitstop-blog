@@ -1,7 +1,7 @@
 {
   "title": "Valeting a Car Before You Sell It: What's Worth Doing",
-  "status": "draft",
-  "publishedAt": "2026-10-21T07:00:00Z",
+  "status": "published",
+  "publishedAt": "2026-10-30T08:26:46Z",
   "language": "en",
   "meta_description": "What buyers notice first when they view a used car, what you can clean yourself before selling, and which valet is worth paying for (and which isn't).",
   "excerpt": "Buyers judge a used car in the first minute, from the photos and the smell. Here's what's worth cleaning before you sell, what you can do yourself, and what isn't worth the money.",
@@ -44,19 +44,37 @@
     "buttonUrl": "https://mobilepitstop.uk/in-out-deep-clean"
   },
   "plan_id": "selling-car",
-  "photos_used": ["P010", "P072", "P065", "P081", "P007"],
+  "photos_used": [
+    "P010",
+    "P072",
+    "P065",
+    "P081",
+    "P007"
+  ],
   "insights": {
     "from": "2026-10-15",
     "target_queries": [],
     "applied": "LOW confidence and no search data for this topic yet; kept the title in searchers' own wording and linked the smell posts, since smell topics draw the most impressions"
   },
   "share": {
-    "status": "pending",
+    "status": "approved",
     "images": [
-      { "src": "share-1.jpg", "alt": "Pearl white BMW 3 Series front three-quarter after a full exterior clean, on a wet yard" },
-      { "src": "share-2.jpg", "alt": "Mercedes E-Class front interior after cleaning: black leather seat, steering wheel and AMG floor mat" },
-      { "src": "share-3.jpg", "alt": "BMW 3 Series front interior after cleaning, black leather seat and steering wheel, door open" },
-      { "src": "share-4.jpg", "alt": "Grey Audi A1 front wing and two-tone alloy wheel after an exterior clean" }
+      {
+        "src": "share-1.jpg",
+        "alt": "Pearl white BMW 3 Series front three-quarter after a full exterior clean, on a wet yard"
+      },
+      {
+        "src": "share-2.jpg",
+        "alt": "Mercedes E-Class front interior after cleaning: black leather seat, steering wheel and AMG floor mat"
+      },
+      {
+        "src": "share-3.jpg",
+        "alt": "BMW 3 Series front interior after cleaning, black leather seat and steering wheel, door open"
+      },
+      {
+        "src": "share-4.jpg",
+        "alt": "Grey Audi A1 front wing and two-tone alloy wheel after an exterior clean"
+      }
     ],
     "facebook": "Selling your car? Buyers make up their mind in the first minute, from the listing photos and from what they smell and touch when they open the door.\n\nThe things they notice first are the smell, the driver's seat and steering wheel, the footwells and boot, the wheels and the glass. A proper clean of those is worth doing. A ceramic coating or paint correction right before a sale usually isn't, because the next owner gets the benefit.\n\nOur new guide covers what buyers notice, what you can do yourself, and which clean is worth paying for.",
     "instagram": "Selling your car? One tip: clean it before you take the listing photos, not after.\n\nBuyers judge a car from the photos first. Clean wheels, clear glass and a fresh interior show up on camera, and dull paint and brown alloys do too. Clear out the door pockets and boot, then shoot it on a bright, overcast day against a plain background.\n\nFull guide on our blog, link in bio.\n\n#carvalet #cardetailing #sellingmycar #usedcars #cheshire #wirral #chester",
