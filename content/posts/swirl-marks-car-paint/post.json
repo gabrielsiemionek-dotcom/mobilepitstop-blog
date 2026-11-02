@@ -1,0 +1,69 @@
+{
+  "title": "How to Remove Swirl Marks From Car Paint (and What Causes Them)",
+  "status": "draft",
+  "publishedAt": "2026-11-02T07:00:00Z",
+  "language": "en",
+  "meta_description": "Swirl marks are fine scratches in the clear coat, so washing and wax won't remove them. Machine polishing will. Here's what causes them and how to stop them.",
+  "excerpt": "Swirl marks are fine scratches in the clear coat, which is why wax only hides them. Here's what causes them, how to check your paint, and how machine polishing removes most of them.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Glossy black Audi bonnet, headlight and front wing after a wash, on a wet block-paved drive"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "swirl marks car paint",
+    "how to remove swirl marks",
+    "what causes swirl marks",
+    "machine polishing swirl marks",
+    "swirl marks on black car"
+  ],
+  "faq": [
+    {
+      "q": "Will wax remove swirl marks?",
+      "a": "No. Some waxes and glazes contain fillers that hide light swirls for a few weeks, but they wash out and the swirls come back. Removing them needs a machine polish."
+    },
+    {
+      "q": "Do swirl marks come back after polishing?",
+      "a": "Polishing removes the scratches rather than filling them. New swirls appear if the car goes back to brush washes, a sponge or a dirty towel, so the washing routine matters as much as the polish."
+    },
+    {
+      "q": "Does machine polishing damage the paint?",
+      "a": "Polishing works by levelling a very thin layer of clear coat, so it should be done carefully and only when the paint needs it. Edges and body lines have the thinnest paint, which is where DIY polishing most often goes wrong."
+    },
+    {
+      "q": "Why are swirl marks worse on black cars?",
+      "a": "Dark paint gives the most contrast, so light catching the edge of each fine scratch stands out. Silver and white cars have swirls too, but they're much harder to see."
+    },
+    {
+      "q": "Can a scratch be too deep to polish out?",
+      "a": "Yes. If your fingernail catches in it, a single-stage polish is unlikely to remove it completely. Multi-stage correction can improve deeper marks, and a scratch through the clear coat needs a body shop."
+    }
+  ],
+  "cta": {
+    "heading": "Get the swirls polished out",
+    "text": "Our Machine Polishing service decontaminates the paint, machine polishes every panel and protects it afterwards, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/machine-polishing"
+  },
+  "plan_id": "swirl-marks",
+  "photos_used": ["P028", "P088", "P087"],
+  "insights": {
+    "from": "2026-11-01",
+    "target_queries": [],
+    "applied": "LOW confidence, no swirl searches yet; title leads with the search phrase and the fix, and the meta description answers in its first sentence, per the CTR note"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "Glossy black Audi bonnet, headlight and front wing after a wash, on a wet block-paved drive" },
+      { "src": "share-2.jpg", "alt": "Black Mercedes G-Class covered in snow foam pre-wash on a gravel drive" },
+      { "src": "share-3.jpg", "alt": "Close-up of snow foam running down silver paint and a V8 Biturbo badge" },
+      { "src": "share-4.jpg", "alt": "Wet white car bonnet and chrome grille trim after a wash, with the MobilePitStop van behind" }
+    ],
+    "facebook": "Swirl marks are thousands of fine scratches in the clear coat, which is why they show up as rings around the sun's reflection on dark paint. Because they're scratches, washing won't shift them, and wax only hides them until it wears off.\n\nWhat removes them is a machine polish, done after a proper decontamination and clay so the polisher works on clean paint. A single-stage polish removes most light swirls, though not every last one, and deeper scratches need more.\n\nOur new guide explains what causes swirls, how to check your own paint, and the washing habits that stop them coming back.",
+    "instagram": "Seeing circles in your paint in the sun? Those are swirl marks.\n\nOne tip to stop adding more: never wipe dust or bird droppings off with a dry cloth. Wet it first, or leave it until you wash, because dry grit dragged across the paint is exactly what makes swirls.\n\nFull guide on our blog, link in bio.\n\n#swirlmarks #machinepolishing #cardetailing #carvalet #cheshire #wirral #chester",
+    "google": "Swirl marks are fine scratches in the clear coat, so wax only hides them. Our new guide explains what causes them, how machine polishing removes most of them, and how to stop them coming back."
+  }
+}
