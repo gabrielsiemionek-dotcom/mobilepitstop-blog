@@ -1,0 +1,65 @@
+{
+  "title": "Mobile Car Valeting at Home: What We Need From You",
+  "status": "draft",
+  "publishedAt": "2026-11-04T08:00:00Z",
+  "language": "en",
+  "meta_description": "For a mobile valet at home we need room round the car, a spot it can stay in and the car emptied. What to sort out, what we bring, and if you've no driveway.",
+  "excerpt": "Booking a mobile valet at home or work? Here's what helps on the day, what we bring in the van, what to do without a driveway, and which jobs we do at the unit instead.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "White Audi Q2 on a wet driveway with the black MobilePitStop van parked behind it"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "mobile valeting what do you need",
+    "mobile car valeting at home",
+    "mobile valet no driveway",
+    "mobile car valet street parking",
+    "preparing car for mobile valet"
+  ],
+  "faq": [
+    {
+      "q": "Do I need a driveway for a mobile valet?",
+      "a": "No, but the car needs to be somewhere it can legally stay for the whole visit, with room to open the doors fully. If you're not sure about your spot, send us a couple of photos of it in daylight and we'll tell you straight."
+    },
+    {
+      "q": "Should I empty my car before a mobile valet?",
+      "a": "Yes. Clear the door pockets, glovebox, console and boot, and take out child seats if you can. It lets us reach every corner and you'll get a better clean."
+    },
+    {
+      "q": "Can you valet my car at work?",
+      "a": "Yes, we come to your home or workplace, roughly within 20 miles of Ellesmere Port. In a private car park, check the owner or manager is happy for a car to be cleaned there."
+    },
+    {
+      "q": "Can a mobile valet go ahead in the rain?",
+      "a": "Interior cleaning and washing can usually go ahead on grey, damp days. Coatings need the right conditions to apply, which is why ceramic coatings are booked by quote."
+    }
+  ],
+  "cta": {
+    "heading": "Ready to book a clean at home?",
+    "text": "The In & Out Deep Clean resets the whole car, inside and out, on your drive or at work. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/in-out-deep-clean"
+  },
+  "plan_id": "mobile-what-we-need",
+  "photos_used": ["P003", "P095", "P012", "P099"],
+  "insights": {
+    "from": "2026-11-01",
+    "target_queries": [],
+    "applied": "LOW confidence, no search data for this topic; led the title with the searcher's phrase, answered the question in the meta description's first sentence, and used FAQ questions in people's wording"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "White Audi Q2 on a wet driveway with the black MobilePitStop van parked behind it" },
+      { "src": "share-2.jpg", "alt": "Ford Kuga with the driver's door open and the MobilePitStop van alongside, cleaning kit on its shelves" },
+      { "src": "share-3.jpg", "alt": "Grey Vauxhall Grandland after a wash on a residential street, with the van and kit behind" },
+      { "src": "share-4.jpg", "alt": "Red Renault Trafic van covered in snow foam on a driveway" }
+    ],
+    "facebook": "Booking a mobile valet at home or at work? We mostly need three things: room to open every door fully and walk round the car, a spot where it can stay parked for the whole visit, and the car emptied of personal bits.\n\nWe bring the kit in the van. No driveway is often fine too, as long as the space is legal for the visit and there's room beside the car.\n\nOur new guide covers what helps on the day, street parking, the weather, and which jobs we do at our Birkenhead unit instead.",
+    "instagram": "Getting a mobile valet at home? One tip: move the car away from the wall or fence the night before.\n\nWe need the doors to open all the way to get compressed air and the vacuum into the seat rails and door shuts. Half-open doors mean half-reached corners.\n\nFull guide on our blog, link in bio.\n\n#mobilevaleting #carvalet #cardetailing #cheshire #wirral #chester",
+    "google": "Booking a mobile valet at home or work? Our new guide explains what we need from you on the day, what we bring, and what to do if you don't have a driveway."
+  }
+}
