@@ -1,0 +1,65 @@
+{
+  "title": "Lease Car Return Cleaning: How to Avoid Extra Charges",
+  "status": "draft",
+  "publishedAt": "2026-11-06T08:00:00Z",
+  "language": "en",
+  "meta_description": "Return a lease car clean so ordinary wear reads as wear, not neglect. What inspectors check, what cleaning can and can't fix, and when to book.",
+  "excerpt": "Leasing companies inspect the car when it's collected, and dirt hides what they're looking for. Here's what a clean can fix before handback, what it can't, and when to book it.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Audi Q7 boot with the third-row seats folded, grey carpet vacuumed with neat lines"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "lease car return cleaning",
+    "cleaning lease car before return",
+    "lease car return condition",
+    "valet before lease return",
+    "lease car fair wear and tear"
+  ],
+  "faq": [
+    {
+      "q": "Should I valet my lease car before returning it?",
+      "a": "If it's anything more than lightly dirty, yes. A clean car lets the inspector see that ordinary wear is just wear, and it avoids charges for things a clean would have fixed, like stains, hair and smells."
+    },
+    {
+      "q": "Can a valet remove damage before a lease return?",
+      "a": "No. Cleaning removes dirt, most stains, pet hair, smells and, with a machine polish, most light swirls. Tears, burns, kerbed alloys, dents and deep scratches need a repair, not a clean."
+    },
+    {
+      "q": "When should I book a clean before handing back a lease car?",
+      "a": "A few days to a week before collection. That gives seats and carpets time to dry after extraction and a smell treatment time to air out, and leaves room to get a repair quote if you spot damage."
+    },
+    {
+      "q": "Will an air freshener cover a smell at lease return?",
+      "a": "Not really. An inspector can usually smell the freshener and the odour underneath it. The smell needs removing at the source, from the fabric, carpets and vents."
+    }
+  ],
+  "cta": {
+    "heading": "Handing back a lease car?",
+    "text": "An In & Out Deep Clean resets the whole car, inside and out, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/in-out-deep-clean"
+  },
+  "plan_id": "lease-return",
+  "photos_used": ["P063", "P059", "P100", "P077", "P064"],
+  "insights": {
+    "from": "2026-11-01",
+    "target_queries": [],
+    "applied": "LOW confidence, no search data for lease returns; followed the damp-post shape (problem, what fixes it, DIY, where DIY stops, FAQs), led the title with the search phrase plus the fix, answered in the meta's first sentence, and linked the smell and dog hair posts"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "Audi Q7 front interior after a detail: black leather seats, steering wheel, console and clean carpet" },
+      { "src": "share-2.jpg", "alt": "BMW rear footwell and black leather rear seat after cleaning, carpet vacuumed with lines" },
+      { "src": "share-3.jpg", "alt": "Audi Q7 centre console and gear selector, gloss black trim cleaned" },
+      { "src": "share-4.jpg", "alt": "Grey Vauxhall Grandland alloy wheel and dressed tyre after cleaning" }
+    ],
+    "facebook": "Handing back a lease car soon? Most leasing companies inspect the car at collection, and dirt hides what they're looking for. A grubby interior or brown wheels can get marked down for things a proper clean would have sorted.\n\nCleaning can deal with stains, smells, pet hair, brake dust and most light swirls. It can't fix tears, burns, kerbed alloys or dents, and nobody should tell you otherwise.\n\nOur new guide covers what inspectors look at, what you can do yourself, and when to book so the car is at its best on collection day.",
+    "instagram": "Lease car going back soon? One tip: get it cleaned a few days to a week before collection, not on the morning.\n\nThat gives seats and carpets time to dry after extraction, lets any smell treatment air out, and leaves you time to get a repair quote if you spot damage. Then photograph every panel, wheel and the interior in daylight on the day it goes.\n\nFull guide on our blog, link in bio.\n\n#carvalet #cardetailing #leasecar #cheshire #wirral #chester",
+    "google": "Handing back a lease car? Our new guide explains what return inspectors look at, what a clean can and can't fix, and when to book it before collection."
+  }
+}
