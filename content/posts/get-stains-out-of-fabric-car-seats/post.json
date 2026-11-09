@@ -1,0 +1,65 @@
+{
+  "title": "How to Get Stains Out of Fabric Car Seats: Blot, Don't Scrub",
+  "status": "draft",
+  "publishedAt": "2026-11-09T08:00:00Z",
+  "language": "en",
+  "meta_description": "Get stains out of fabric car seats by blotting, not scrubbing, and using as little liquid as you can. What to use, what to avoid, and when it needs extraction.",
+  "excerpt": "Most seat stains go wrong in the first five minutes: rubbing spreads them and soaking drives them into the foam. Here's what works at home, stain by stain, and what shampoo and extraction does when DIY runs out.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Grey patterned fabric driver's seat in a VW Transporter cab after cleaning"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "how to clean fabric car seats",
+    "get stains out of car seats",
+    "car seat stain removal",
+    "car upholstery cleaning",
+    "water marks on car seats"
+  ],
+  "faq": [
+    {
+      "q": "What is the best way to get a stain out of a fabric car seat?",
+      "a": "Blot it with a clean white cloth rather than rubbing, then use a small amount of upholstery cleaner made for car interiors, worked from the outside of the stain inwards. Rinse by blotting with a damp cloth and dry the seat quickly."
+    },
+    {
+      "q": "Why is there a ring on my car seat after cleaning it?",
+      "a": "That's a water mark. The water spreads outwards through the fabric and leaves dirt behind at the edge as it dries. Use less water, and clean the whole panel out to its seams so it dries evenly."
+    },
+    {
+      "q": "Can I use household cleaners on car seats?",
+      "a": "It's safer not to. Bleach and strong household products can lighten the fabric or leave a sticky residue, so use a cleaner made for car upholstery and test it on a hidden area first. Never mix products."
+    },
+    {
+      "q": "Can every stain be removed from a fabric car seat?",
+      "a": "No. Shampoo and extraction remove most stains, but ink and dye can bond with the fibres, and fading, burns and wear are damage rather than dirt. Send us photos in daylight and we'll tell you honestly what's likely to come out."
+    }
+  ],
+  "cta": {
+    "heading": "Stains that won't shift?",
+    "text": "Our In & Out Deep Clean includes seat stain treatment, shampoo and extraction, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/in-out-deep-clean"
+  },
+  "plan_id": "cloth-seat-stains",
+  "photos_used": ["P058", "P050", "P054", "P083"],
+  "insights": {
+    "from": "2026-11-01",
+    "target_queries": [],
+    "applied": "LOW confidence, no seat-stain searches in the data yet; picked a 'how to get X out of car seats' problem topic as its signals suggest, led the title with the search phrase plus the fix, answered in the meta's first sentence, followed the damp-post shape (problem, DIY, where DIY stops, how we do it, FAQs) and linked the damp, dog hair and odour pages"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "Fabric rear bench seat in a VW camper after shampoo and extraction, even colour across the cushions" },
+      { "src": "share-2.jpg", "alt": "The same VW camper bench before cleaning, with dark stains on the seat cushions" },
+      { "src": "share-3.jpg", "alt": "Grey patterned fabric front seats in a VW Transporter cab after cleaning" },
+      { "src": "share-4.jpg", "alt": "Fabric front seats and dashboard of a Mini after an interior clean" }
+    ],
+    "facebook": "Spilt something on a fabric car seat? Blot it, don't scrub it. Rubbing pushes the stain down into the foam and spreads it sideways, and soaking the seat makes it worse.\n\nIf you've ever cleaned a spot and ended up with a pale ring around it, that's a water mark: too much water carrying dirt to the edge as it dries.\n\nOur new guide covers what to do in the first five minutes, how to treat coffee, milk, mud and grease, what to avoid, and what shampoo and extraction does when DIY runs out.",
+    "instagram": "Fresh spill on a fabric seat? Blot it with a clean white cloth. Press, lift, move to a clean bit of cloth, press again 🧽\n\nDon't scrub. Rubbing drives the stain into the foam and spreads it through the weave. Then use a little upholstery cleaner, working from the outside of the stain inwards, and dry the seat fast with the windows down.\n\nFull guide on our blog, link in bio.\n\n#carinterior #seatshampoo #cardetailing #carvalet #mobilevaleting #cheshire #wirral #chester",
+    "google": "Stain on a fabric car seat? Our new guide explains how to treat it without spreading it, what to avoid, and when seats need shampoo and extraction."
+  }
+}
