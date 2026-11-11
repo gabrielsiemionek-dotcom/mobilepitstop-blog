@@ -1,0 +1,69 @@
+{
+  "title": "Milk Spilled in Car? How to Clean It and Stop the Smell",
+  "status": "draft",
+  "publishedAt": "2026-11-11T08:00:00Z",
+  "language": "en",
+  "meta_description": "Milk spilled in your car? Blot it, rinse with cold water and dry it fast. Why it smells sour days later, how to fix it yourself, and when it needs extraction.",
+  "excerpt": "Spilt milk soaks into the underlay and turns sour a few days later. What to do in the first hour, how to get the smell out yourself, and when it needs extraction.",
+  "hero": {
+    "src": "hero.webp",
+    "alt": "Rear footwell of an Audi Q7 with a freshly vacuumed grey carpet mat next to a black leather seat"
+  },
+  "social": {
+    "src": "social.webp"
+  },
+  "keywords": [
+    "milk spilled in car",
+    "spilt milk car smell",
+    "how to get milk smell out of car",
+    "sour milk smell in car",
+    "milk spilled on car carpet"
+  ],
+  "faq": [
+    {
+      "q": "How long does it take for spilt milk to smell in a car?",
+      "a": "Often a few days. The milk soaks into the underlay, and bacteria break it down while it stays damp, so the sour smell usually shows up on the first warm day with the windows shut."
+    },
+    {
+      "q": "Will bicarbonate of soda get rid of a milk smell in my car?",
+      "a": "It can soak up some smell from the surface once the area is dry. It won't remove milk that has soaked into the underlay or seat foam, so if the smell comes back, the milk itself needs to come out."
+    },
+    {
+      "q": "Should I use hot water to clean spilt milk?",
+      "a": "No, use cold water. Hot water can set milk proteins into the fibres. Dab a little on, then blot it straight back out."
+    },
+    {
+      "q": "Will an air freshener cover a sour milk smell?",
+      "a": "Only for a while. The milk is still in the carpet, and the smell returns once the scent fades or the car warms up."
+    },
+    {
+      "q": "Do I need to be in the car while you do an ozone treatment?",
+      "a": "No, and you mustn't be. Ozone is only used in an empty car, and the car is aired out before anyone gets back in."
+    }
+  ],
+  "cta": {
+    "heading": "Milk smell won't go?",
+    "text": "We find where the milk went, extract it from the carpet and treat what's left, at your home or workplace. See what's included and book online.",
+    "buttonLabel": "See prices and book",
+    "buttonUrl": "https://mobilepitstop.uk/cigarette/milk/bio-odour-removal"
+  },
+  "plan_id": "milk-spill",
+  "photos_used": ["P062", "P097", "P070", "P021"],
+  "insights": {
+    "from": "2026-11-01",
+    "target_queries": [],
+    "applied": "LOW confidence; chose milk-spill over ceramic-worth-it because Topic signals name it as the best fit for the narrow interior-smell pattern that got the damp post seen; copied the damp post's shape, led the title with the search phrase plus the fix, answered in the meta's first sentence; no milk searches in the data yet"
+  },
+  "share": {
+    "status": "pending",
+    "images": [
+      { "src": "share-1.jpg", "alt": "Rear footwell of an Audi Q7 with a freshly vacuumed grey carpet mat" },
+      { "src": "share-2.jpg", "alt": "Grey fabric rear seats and footwell of a hatchback after an interior clean" },
+      { "src": "share-3.jpg", "alt": "BMW 3 Series fabric driver's seat and dashboard after cleaning" },
+      { "src": "share-4.jpg", "alt": "Ozone generator on the armrest of a car with red leather seats" }
+    ],
+    "facebook": "Spilt milk in the car is one of those things that seems fine on the day and smells awful a few days later. The milk runs through the carpet into the foam underlay, stays damp, and goes sour, usually just in time for the first warm afternoon.\n\nThe first hour matters most: mats out, blot hard with towels, a little cold water, blot again, then dry it out. Our new guide covers what to do straight away, how to get the smell out yourself, and when it needs proper extraction.",
+    "instagram": "Spilt milk in the car? Blot it, don't rub it 🥛\n\nGet the mats out, press towels hard into the patch until nothing more comes up, dab on a little cold water (not hot) and blot again. Then stand on a dry towel for a minute to pull milk up from the underlay, and leave the doors open to dry it. If it still smells sour a few days later, the milk is in the underlay and needs extracting, not an air freshener.\n\nFull guide on our blog, link in bio.\n\n#odourremoval #carinterior #cardetailing #carvalet #mobilevaleting #cheshire #wirral #chester",
+    "google": "Milk spilled in your car? Our new guide explains what to do in the first hour, why it smells sour days later, how to get the smell out yourself, and when it needs extraction."
+  }
+}
